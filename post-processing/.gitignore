@@ -1,0 +1,9 @@
+./dataset/python/sample-database/python-database/*
+./dataset/python/sample-database/python-database/*/*
+./dataset/python/sample-database/python-database/*/*/*
+
+*.rel
+*.checksum
+*.d
+*.dbscheme
+*.dbscheme.*

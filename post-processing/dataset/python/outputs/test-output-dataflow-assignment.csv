@@ -1,0 +1,120 @@
+"Empty scope",,"warning","Var Assign X C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train0.py:26
+","/train0.py","26","5","26","10"
+"Empty scope",,"warning","Var Assign y C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train0.py:27
+","/train0.py","27","5","27","10"
+"Empty scope",,"warning","Var Assign image C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train0.py:36
+","/train0.py","36","13","36","62"
+"Empty scope",,"warning","Var Assign face_bounding_boxes C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train0.py:37
+","/train0.py","37","13","37","72"
+"Empty scope",,"warning","Var Assign n_neighbors C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train0.py:50
+","/train0.py","50","9","50","51"
+"Empty scope",,"warning","Var Assign knn_clf C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train0.py:55
+","/train0.py","55","5","55","109"
+"Empty scope",,"warning","Var Assign knn_clf C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train1.py:22
+","/train1.py","22","13","22","36"
+"Empty scope",,"warning","Var Assign X_img C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train1.py:25
+","/train1.py","25","5","25","56"
+"Empty scope",,"warning","Var Assign X_face_locations C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train1.py:26
+","/train1.py","26","5","26","61"
+"Empty scope",,"warning","Var Assign faces_encodings C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train1.py:33
+","/train1.py","33","5","33","99"
+"Empty scope",,"warning","Var Assign closest_distances C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train1.py:36
+","/train1.py","36","5","36","74"
+"Empty scope",,"warning","Var Assign are_matches C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train1.py:37
+","/train1.py","37","5","37","106"
+"Empty scope",,"warning","Var Assign landmarks C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train10.py:10
+","/train10.py","10","5","10","70"
+"Empty scope",,"warning","Var Assign landmarks_as_tuples C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train10.py:11
+","/train10.py","11","5","11","92"
+"Empty scope",,"warning","Var Assign raw_landmarks C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train11.py:10
+","/train11.py","10","5","10","88"
+"Empty scope",,"warning","Var Assign sc C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train12.py:41
+","/train12.py","41","5","41","43"
+"Empty scope",,"warning","Var Assign dataType C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train14.py:10
+","/train14.py","10","5","10","44"
+"Empty scope",,"warning","Var Assign items C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train15.py:4
+","/train15.py","4","9","4","35"
+"Empty scope",,"warning","Var Assign items C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train15.py:8
+","/train15.py","8","13","8","51"
+"Empty scope",,"warning","Var Assign items C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train15.py:10
+","/train15.py","10","13","10","48"
+"Empty scope",,"warning","Var Assign names C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train15.py:13
+","/train15.py","13","17","13","67"
+"Empty scope",,"warning","Var Assign items C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train15.py:16
+","/train15.py","16","13","16","35"
+"Empty scope",,"warning","Var Assign items C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train15.py:19
+","/train15.py","19","9","19","44"
+"Empty scope",,"warning","Var Assign fields C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train15.py:24
+","/train15.py","24","5","24","69"
+"Empty scope",,"warning","Var Assign conv C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train17.py:7
+","/train17.py","7","9","7","54"
+"Empty scope",,"warning","Var Assign kconv C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train17.py:11
+","/train17.py","11","9","11","51"
+"Empty scope",,"warning","Var Assign vconv C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train17.py:12
+","/train17.py","12","9","12","53"
+"Empty scope",,"warning","Var Assign names C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train17.py:22
+","/train17.py","22","5","22","45"
+"Empty scope",,"warning","Var Assign converters C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train17.py:23
+","/train17.py","23","5","23","73"
+"Empty scope",,"warning","Var Assign convert_fields C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train17.py:24
+","/train17.py","24","5","24","78"
+"Empty scope",,"warning","Var Assign d C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train17.py:37
+","/train17.py","37","13","37","19"
+"Empty scope",,"warning","Var Assign d C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train17.py:39
+","/train17.py","39","13","39","28"
+"Empty scope",,"warning","Var Assign new_msg C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:52
+","/train18.py","52","9","52","33"
+"Empty scope",,"warning","Var Assign new_name C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:53
+","/train18.py","53","9","53","43"
+"Empty scope",,"warning","Var Assign new_msg C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:55
+","/train18.py","55","9","55","52"
+"Empty scope",,"warning","Var Assign new_name C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:56
+","/train18.py","56","9","56","57"
+"Empty scope",,"warning","Var Assign _type C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:67
+","/train18.py","67","5","67","26"
+"Empty scope",,"warning","Var Assign verify_value C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:81
+","/train18.py","81","9","81","34"
+"Empty scope",,"warning","Var Assign verifier C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:84
+","/train18.py","84","9","84","69"
+"Empty scope",,"warning","Var Assign verify_value C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:91
+","/train18.py","91","9","91","33"
+"Empty scope",,"warning","Var Assign verify_value C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:100
+","/train18.py","100","9","100","34"
+"Empty scope",,"warning","Var Assign verify_value C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:109
+","/train18.py","109","9","109","35"
+"Empty scope",,"warning","Var Assign verify_value C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:119
+","/train18.py","119","9","119","37"
+"Empty scope",,"warning","Var Assign element_verifier C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:122
+","/train18.py","122","9","123","91"
+"Empty scope",,"warning","Var Assign verify_value C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:131
+","/train18.py","131","9","131","35"
+"Empty scope",,"warning","Var Assign key_verifier C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:134
+","/train18.py","134","9","134","96"
+"Empty scope",,"warning","Var Assign value_verifier C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:135
+","/train18.py","135","9","136","90"
+"Empty scope",,"warning","Var Assign verify_value C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:145
+","/train18.py","145","9","145","33"
+"Empty scope",,"warning","Var Assign verifiers C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:148
+","/train18.py","148","9","148","22"
+"Empty scope",,"warning","Var Assign verifier C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:150
+","/train18.py","150","13","150","89"
+"Empty scope",,"warning","Var Assign d C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:171
+","/train18.py","171","17","171","32"
+"Empty scope",,"warning","Var Assign verify_value C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:177
+","/train18.py","177","9","177","36"
+"Empty scope",,"warning","Var Assign verify_value C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train18.py:184
+","/train18.py","184","9","184","37"
+"Empty scope",,"warning","Var Assign pil_image C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train2.py:9
+","/train2.py","9","5","9","51"
+"Empty scope",,"warning","Var Assign draw C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train2.py:10
+","/train2.py","10","5","10","36"
+"Empty scope",,"warning","Var Assign name C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train2.py:18
+","/train2.py","18","9","18","35"
+"Empty scope",,"warning","Var Assign Tuple C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train2.py:21
+","/train2.py","21","9","21","53"
+"Empty scope",,"warning","Var Assign im C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train6.py:9
+","/train6.py","9","5","9","29"
+"Empty scope",,"warning","Var Assign im C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train6.py:11
+","/train6.py","11","9","11","29"
+"Empty scope",,"warning","Var Assign raw_detections_batched C:/Users/siddh/Documents/Projects/Masters/UIUC/CS598-JBR/Project/CS598-JBR-Sp2023-Project/dataset/python/sample-database/train9.py:15
+","/train9.py","15","5","15","105"

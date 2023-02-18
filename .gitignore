@@ -1,2 +1,3 @@
 # CodeQL compilation caches
 .cache/
+./post-processing/dataset/python/sample-database/python-database/

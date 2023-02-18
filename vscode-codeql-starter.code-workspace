@@ -23,9 +23,37 @@
 		},
 		{
 			"path": "ql"
+		},
+		{
+			"path": "post-processing"
+		},
+		{
+			"name": "[saltstack/salt source archive]",
+			"uri": "codeql-zip-archive://1-137/c:\\Users\\siddh\\AppData\\Roaming\\Code\\User\\workspaceStorage\\bd377d444463ce1e857768e61cd36bcd\\GitHub.vscode-codeql\\python\\codeql_db\\src.zip"
+		},
+		{
+			"name": "Quick Queries",
+			"path": "../../../../../../../../AppData/Roaming/Code/User/workspaceStorage/bd377d444463ce1e857768e61cd36bcd/GitHub.vscode-codeql/quick-queries"
+		},
+		{
+			"name": "[apache/activemq source archive]",
+			"uri": "codeql-zip-archive://1-135/c:\\Users\\siddh\\AppData\\Roaming\\Code\\User\\workspaceStorage\\bd377d444463ce1e857768e61cd36bcd\\GitHub.vscode-codeql\\java\\codeql_db\\src.zip"
+		},
+		{
+			"name": "[python-database source archive]",
+			"uri": "codeql-zip-archive://1-145/c:\\Users\\siddh\\Documents\\Projects\\Masters\\UIUC\\CS598-JBR\\Project\\CS598-JBR-Sp2023-Project\\dataset\\python\\sample-database\\python-database\\src.zip"
+		},
+		{
+			"name": "[Esri/geometry-api-java source archive]",
+			"uri": "codeql-zip-archive://1-135/c:\\Users\\siddh\\AppData\\Roaming\\Code\\User\\workspaceStorage\\21838071379d818259ce2419150618d2\\GitHub.vscode-codeql\\java\\codeql_db\\src.zip"
+		},
+		{
+			"name": "[python-database source archive]",
+			"uri": "codeql-zip-archive://1-155/c:\\Users\\siddh\\Documents\\Projects\\Masters\\UIUC\\CS598-JBR\\Project\\CS598-ML4SE-codeql\\post-processing\\dataset\\python\\sample-database\\python-database\\src.zip"
 		}
 	],
 	"settings": {
 		"omnisharp.autoStart": false
 	}
+
 }
