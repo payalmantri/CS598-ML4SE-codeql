@@ -14,14 +14,22 @@
 
 string formatParentChild(ControlFlowNode n, string ty){
    ty = "If" and
-   result = ""
-   + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" +((IfStmt)n).getThen().getControlFlowNode()+ " " + getQuickLocation(((IfStmt)n).getThen().getControlFlowNode()) + "\"" + "\n"
-   + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + ((IfStmt)n).getElse().getControlFlowNode()+ " " + getQuickLocation(((IfStmt)n).getElse().getControlFlowNode()) + "\""
+      if exists(((IfStmt)n).getElse())
+      then result = ""
+      + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" +((IfStmt)n).getThen().getControlFlowNode()+ " " + getQuickLocation(((IfStmt)n).getThen().getControlFlowNode()) + "\"" + "\n"
+      + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + ((IfStmt)n).getElse().getControlFlowNode()+ " " + getQuickLocation(((IfStmt)n).getElse().getControlFlowNode()) + "\""
+      else 
+      result = ""
+      + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" +((IfStmt)n).getThen().getControlFlowNode()+ " " + getQuickLocation(((IfStmt)n).getThen().getControlFlowNode()) + "\"" + "\n"
+      + "\"" + n + " " + getQuickLocation(n) + "\"" + " -> " + "\"" +((ConditionNode)((IfStmt)n).getCondition()).getAFalseSuccessor()+ " " + getQuickLocation(((ConditionNode)((IfStmt)n).getCondition()).getAFalseSuccessor()) + "\"" + "\n"
+
    or
    ty = "For" and
    result = ""
    + "\"" + n + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + ((ConditionNode)((ForStmt)n).getCondition()).getATrueSuccessor()+ " " + getQuickLocation(((ConditionNode)((ForStmt)n).getCondition()).getATrueSuccessor()) + "\"" + "\n"
-   + "\"" + n + " " + getQuickLocation(n) + "\"" + " -> " +  "\"" + ((ConditionNode)((ForStmt)n).getCondition()).getAFalseSuccessor()+ " " + getQuickLocation(((ConditionNode)((ForStmt)n).getCondition()).getAFalseSuccessor()) + "\""
+      + "\"" + n + " " + getQuickLocation(n) + "\"" + " -> " +  "\"" + ((ConditionNode)((ForStmt)n).getCondition()).getAFalseSuccessor()+ " " + getQuickLocation(((ConditionNode)((ForStmt)n).getCondition()).getAFalseSuccessor()) + "\"" + "\n"
+    + "\"" + ((ConditionNode)((ForStmt)n).getCondition()).getATrueSuccessor()+ " " + getQuickLocation(((ConditionNode)((ForStmt)n).getCondition()).getATrueSuccessor()) + "\""+ " -> " + "\"" + n + " " + getQuickLocation(n) + "\""  + "\n"
+
    or 
    ty = "TryCatch" and
    result = ""
@@ -30,7 +38,8 @@ string formatParentChild(ControlFlowNode n, string ty){
    or
    ty = "Stmt" and
    result = ""
-   + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + n.getANormalSuccessor()+ " " + getQuickLocation(n.getANormalSuccessor()) + "\""
+   + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + n.getANormalSuccessor()+ " " + getQuickLocation(n.getANormalSuccessor()) + "\"" + "\n"
+
            
 
 }
@@ -121,7 +130,8 @@ string formatOutput(ControlFlowNode c) {
 //  select c, formatOutput(c)
 
 from  ControlFlowNode c
-where  c.getEnclosingCallable().getDeclaringType().getName().matches("SegmentIteratorImpl") //and c.getAPrimaryQlClass().matches("%Stmt") //and (c.getANormalSuccessor() != c.getAnExceptionalSuccessor() or c.getATrueSuccessor() != c.getAFalseSuccessor() or c instanceof IfExprNode or c instanceof ForNode)
-      and c.getEnclosingCallable().getName() = "resetToPath"
+where  c.getEnclosingCallable().getDeclaringType().getName().matches("ConvexHull") //and c.getAPrimaryQlClass().matches("%Stmt") //and (c.getANormalSuccessor() != c.getAnExceptionalSuccessor() or c.getATrueSuccessor() != c.getAFalseSuccessor() or c instanceof IfExprNode or c instanceof ForNode)
+      and c.getEnclosingCallable().getName() = "getBoundingGeometry"
+      and(c instanceof IfStmt or c instanceof ForStmt  or c instanceof TryStmt)
 //where c.getEnclosingCallable().getDeclaringType().getName().matches("BucketSort")
 select c, formatOutput1(c)

@@ -44,7 +44,7 @@ def generateGraph():
     uniqueFiles = graphData["File"].unique()
     for jx,filename in enumerate(uniqueFiles):
         f = open(f"{op_filename}_{jx}.dot", "w")
-        f.write("digraph {")
+        f.write("strict digraph {")
         counter = 0
         allEdges = graphData.loc[lambda df: df["File"] == filename,"Edges"]
         for ix,element in allEdges.items():
