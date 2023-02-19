@@ -1,8 +1,10 @@
 digraph {
 a -> b
+a -> b
 b -> c
-hello -> b
-hello -> a
-e -> f
+"he llo" -> b
+"he llo" -> a
+e -> " "
+h -> " "
 g -> hello
 }

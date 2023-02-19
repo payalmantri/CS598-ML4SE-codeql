@@ -1,0 +1,477 @@
+"Empty scope",,"warning","train_dir->class_dir
+os->class_dir","/train0.py","30","9","30","17"
+"Empty scope",,"warning","train_dir->img_path
+class_dir->img_path
+os->img_path
+image_files_in_folder->img_path","/train0.py","35","13","35","20"
+"Empty scope",,"warning","img_path->image
+face_recognition->image","/train0.py","36","13","36","17"
+"Empty scope",,"warning","face_recognition->face_bounding_boxes
+image->face_bounding_boxes","/train0.py","37","13","37","31"
+"Empty scope",,"warning","int->n_neighbors
+len->n_neighbors
+round->n_neighbors
+X->n_neighbors
+math->n_neighbors","/train0.py","50","9","50","19"
+"Empty scope",,"warning","n_neighbors->knn_clf
+knn_algo->knn_clf
+neighbors->knn_clf","/train0.py","55","5","55","11"
+"Empty scope",,"warning","open->f
+model_save_path->f","/train0.py","60","45","60","45"
+"Empty scope",,"warning","open->f
+model_path->f","/train1.py","21","40","21","40"
+"Empty scope",,"warning","f->knn_clf
+pickle->knn_clf","/train1.py","22","13","22","19"
+"Empty scope",,"warning","face_recognition->X_img
+X_img_path->X_img","/train1.py","25","5","25","9"
+"Empty scope",,"warning","face_recognition->X_face_locations
+X_img->X_face_locations","/train1.py","26","5","26","20"
+"Empty scope",,"warning","face_recognition->faces_encodings
+X_img->faces_encodings
+X_face_locations->faces_encodings","/train1.py","33","5","33","19"
+"Empty scope",,"warning","knn_clf->closest_distances
+faces_encodings->closest_distances","/train1.py","36","5","36","21"
+"Empty scope",,"warning",".0->.0
+len->.0
+range->.0
+i->.0
+distance_threshold->.0
+X_face_locations->.0
+closest_distances->.0","/train1.py","37","19","37","106"
+"Empty scope",,"warning","len->i
+range->i
+.0->i
+i->i
+distance_threshold->i
+X_face_locations->i
+closest_distances->i","/train1.py","37","73","37","73"
+"Empty scope",,"warning","len->are_matches
+range->are_matches
+distance_threshold->are_matches
+X_face_locations->are_matches
+closest_distances->are_matches
+.0->are_matches
+i->are_matches","/train1.py","37","5","37","15"
+"Empty scope",,"warning",".0->.0
+X_face_locations->.0
+zip->.0
+knn_clf->.0
+faces_encodings->.0
+are_matches->.0
+pred->.0
+loc->.0
+rec->.0","/train1.py","40","12","40","144"
+"Empty scope",,"warning","zip->pred
+knn_clf->pred
+X_face_locations->pred
+faces_encodings->pred
+.0->pred
+are_matches->pred
+pred->pred
+loc->pred
+rec->pred","/train1.py","40","58","40","61"
+"Empty scope",,"warning","zip->loc
+knn_clf->loc
+X_face_locations->loc
+faces_encodings->loc
+.0->loc
+are_matches->loc
+pred->loc
+loc->loc
+rec->loc","/train1.py","40","64","40","66"
+"Empty scope",,"warning","zip->rec
+knn_clf->rec
+X_face_locations->rec
+faces_encodings->rec
+.0->rec
+are_matches->rec
+pred->rec
+loc->rec
+rec->rec","/train1.py","40","69","40","71"
+"Empty scope",,"warning","face_locations->landmarks
+face_image->landmarks
+model->landmarks
+_raw_face_landmarks->landmarks","/train10.py","10","5","10","13"
+"Empty scope",,"warning",".0->.0
+landmarks->.0
+landmark->.0
+p->.0","/train10.py","11","27","11","92"
+"Empty scope",,"warning",".0->landmark
+landmarks->landmark
+landmark->landmark
+p->landmark","/train10.py","11","71","11","78"
+"Empty scope",,"warning",".0->.0
+landmarks->.0
+landmark->.0
+p->.0","/train10.py","11","28","11","65"
+"Empty scope",,"warning",".0->p
+landmarks->p
+landmark->p
+p->p","/train10.py","11","44","11","44"
+"Empty scope",,"warning",".0->landmarks_as_tuples
+landmarks->landmarks_as_tuples
+landmark->landmarks_as_tuples
+p->landmarks_as_tuples","/train10.py","11","5","11","23"
+"Empty scope",,"warning",".0->.0","/train10.py","15","16","25","44"
+"Empty scope",,"warning","landmarks_as_tuples->points","/train10.py","25","15","25","20"
+"Empty scope",,"warning",".0->.0","/train10.py","27","16","31","44"
+"Empty scope",,"warning","landmarks_as_tuples->points","/train10.py","31","15","31","20"
+"Empty scope",,"warning","known_face_locations->raw_landmarks
+face_image->raw_landmarks
+_raw_face_landmarks->raw_landmarks","/train11.py","10","5","10","17"
+"Empty scope",,"warning",".0->.0
+face_image->.0
+num_jitters->.0
+raw_landmarks->.0
+raw_landmark_set->.0
+np->.0
+face_encoder->.0","/train11.py","11","12","11","140"
+"Empty scope",,"warning",".0->raw_landmark_set
+face_image->raw_landmark_set
+num_jitters->raw_landmark_set
+raw_landmarks->raw_landmark_set
+raw_landmark_set->raw_landmark_set
+np->raw_landmark_set
+face_encoder->raw_landmark_set","/train11.py","11","107","11","122"
+"Empty scope",,"warning","SparkContext->sc","/train12.py","41","5","41","6"
+"Empty scope",,"warning","Exception->e","/train12.py","54","25","54","25"
+"Empty scope",,"warning","type->dataType
+obj->dataType
+_type_mappings->dataType","/train14.py","10","5","10","12"
+"Empty scope",,"warning","obj->key","/train14.py","18","13","18","15"
+"Empty scope",,"warning","obj->value","/train14.py","18","18","18","22"
+"Empty scope",,"warning","obj->v","/train14.py","23","13","23","13"
+"Empty scope",,"warning","sorted->items
+row->items","/train15.py","4","9","4","13"
+"Empty scope",,"warning","row->items
+tuple->items
+zip->items","/train15.py","8","13","8","17"
+"Empty scope",,"warning","row->items
+tuple->items
+zip->items","/train15.py","10","13","10","17"
+"Empty scope",,"warning",".0->.0
+len->.0
+range->.0
+i->.0
+row->.0","/train15.py","13","25","13","67"
+"Empty scope",,"warning","len->i
+range->i
+.0->i
+i->i
+row->i","/train15.py","13","40","13","40"
+"Empty scope",,"warning","len->names
+range->names
+.0->names
+i->names
+row->names","/train15.py","13","17","13","21"
+"Empty scope",,"warning",".0->.0
+len->.0
+range->.0
+i->.0
+row->.0
+names->.0","/train15.py","15","30","15","83"
+"Empty scope",,"warning","len->i
+range->i
+.0->i
+i->i
+row->i
+names->i","/train15.py","15","44","15","44"
+"Empty scope",,"warning","row->items
+zip->items
+names->items","/train15.py","16","13","16","17"
+"Empty scope",,"warning","sorted->items
+row->items","/train15.py","19","9","19","13"
+"Empty scope",,"warning",".0->.0
+v->.0
+items->.0
+_infer_type->.0
+k->.0
+StructField->.0","/train15.py","24","14","24","69"
+"Empty scope",,"warning",".0->k
+v->k
+items->k
+_infer_type->k
+k->k
+StructField->k","/train15.py","24","56","24","56"
+"Empty scope",,"warning",".0->v
+v->v
+items->v
+_infer_type->v
+k->v
+StructField->v","/train15.py","24","59","24","59"
+"Empty scope",,"warning","items->fields
+.0->fields
+_infer_type->fields
+v->fields
+k->fields
+StructField->fields","/train15.py","24","5","24","10"
+"Empty scope",,"warning",".0->.0
+any->.0
+f->.0
+_has_nulltype->.0
+dt->.0","/train16.py","4","20","4","63"
+"Empty scope",,"warning","any->f
+f->f
+.0->f
+_has_nulltype->f
+dt->f","/train16.py","4","50","4","50"
+"Empty scope",,"warning","x->x","/train17.py","4","23","4","23"
+"Empty scope",,"warning","dataType->conv
+_create_converter->conv","/train17.py","7","9","7","12"
+"Empty scope",,"warning",".0->row
+v->row
+row->row
+conv->row","/train17.py","8","23","8","25"
+"Empty scope",,"warning",".0->.0
+row->.0
+v->.0
+conv->.0","/train17.py","8","28","8","49"
+"Empty scope",,"warning",".0->v
+v->v
+row->v
+conv->v","/train17.py","8","41","8","41"
+"Empty scope",,"warning","dataType->kconv
+_create_converter->kconv","/train17.py","11","9","11","13"
+"Empty scope",,"warning","dataType->vconv
+_create_converter->vconv","/train17.py","12","9","12","13"
+"Empty scope",,"warning",".0->row
+v->row
+row->row
+dict->row
+k->row
+kconv->row
+vconv->row","/train17.py","13","23","13","25"
+"Empty scope",,"warning",".0->.0
+row->.0
+v->.0
+dict->.0
+k->.0
+kconv->.0
+vconv->.0","/train17.py","13","33","13","76"
+"Empty scope",,"warning","dict->k
+.0->k
+v->k
+k->k
+row->k
+kconv->k
+vconv->k","/train17.py","13","58","13","58"
+"Empty scope",,"warning",".0->v
+v->v
+row->v
+dict->v
+k->v
+kconv->v
+vconv->v","/train17.py","13","61","13","61"
+"Empty scope",,"warning","x->x","/train17.py","19","23","19","23"
+"Empty scope",,"warning",".0->.0
+f->.0
+dataType->.0","/train17.py","22","13","22","45"
+"Empty scope",,"warning","f->f
+.0->f
+dataType->f","/train17.py","22","25","22","25"
+"Empty scope",,"warning",".0->names
+f->names
+dataType->names","/train17.py","22","5","22","9"
+"Empty scope",,"warning",".0->.0
+f->.0
+dataType->.0
+_create_converter->.0","/train17.py","23","18","23","73"
+"Empty scope",,"warning","f->f
+.0->f
+dataType->f
+_create_converter->f","/train17.py","23","53","23","53"
+"Empty scope",,"warning","f->converters
+.0->converters
+dataType->converters
+_create_converter->converters","/train17.py","23","5","23","14"
+"Empty scope",,"warning",".0->.0
+any->.0
+f->.0
+dataType->.0
+_need_converter->.0","/train17.py","24","26","24","77"
+"Empty scope",,"warning","any->f
+f->f
+.0->f
+dataType->f
+_need_converter->f","/train17.py","24","58","24","58"
+"Empty scope",,"warning","any->convert_fields
+f->convert_fields
+.0->convert_fields
+dataType->convert_fields
+_need_converter->convert_fields","/train17.py","24","5","24","18"
+"Empty scope",,"warning",".0->.0
+v->.0
+conv->.0
+zip->.0
+tuple->.0
+obj->.0
+converters->.0","/train17.py","32","30","32","72"
+"Empty scope",,"warning",".0->v
+v->v
+conv->v
+obj->v
+tuple->v
+zip->v
+converters->v","/train17.py","32","42","32","42"
+"Empty scope",,"warning","tuple->conv
+obj->conv
+zip->conv
+.0->conv
+v->conv
+conv->conv
+converters->conv","/train17.py","32","45","32","48"
+"Empty scope",,"warning","obj->d","/train17.py","37","13","37","13"
+"Empty scope",,"warning","obj->d","/train17.py","39","13","39","13"
+"Empty scope",,"warning",".0->.0
+conv->.0
+zip->.0
+names->.0
+tuple->.0
+converters->.0
+name->.0
+d->.0","/train17.py","44","26","44","85"
+"Empty scope",,"warning","name->name
+tuple->name
+zip->name
+.0->name
+names->name
+conv->name
+converters->name
+d->name","/train17.py","44","49","44","52"
+"Empty scope",,"warning","tuple->conv
+zip->conv
+.0->conv
+conv->conv
+converters->conv
+name->conv
+names->conv
+d->conv","/train17.py","44","55","44","58"
+"Empty scope",,"warning",".0->.0
+names->.0
+tuple->.0
+name->.0
+d->.0","/train17.py","46","26","46","56"
+"Empty scope",,"warning","name->name
+tuple->name
+.0->name
+names->name
+d->name","/train17.py","46","43","46","46"
+"Empty scope",,"warning","msg->msg","/train18.py","52","26","52","28"
+"Empty scope",,"warning","msg->new_msg","/train18.py","52","9","52","15"
+"Empty scope",,"warning","n->n","/train18.py","53","27","53","27"
+"Empty scope",,"warning","n->new_name","/train18.py","53","9","53","16"
+"Empty scope",,"warning","msg->msg
+name->msg","/train18.py","55","26","55","28"
+"Empty scope",,"warning","msg->new_msg
+name->new_msg","/train18.py","55","9","55","15"
+"Empty scope",,"warning","n->n
+name->n","/train18.py","56","27","56","27"
+"Empty scope",,"warning","n->new_name
+name->new_name","/train18.py","56","9","56","16"
+"Empty scope",,"warning","type->_type
+dataType->_type","/train18.py","67","5","67","9"
+"Empty scope",,"warning","_->_","/train18.py","81","31","81","31"
+"Empty scope",,"warning","_->verify_value","/train18.py","81","9","81","20"
+"Empty scope",,"warning","name->verifier
+dataType->verifier
+_make_type_verifier->verifier","/train18.py","84","9","84","16"
+"Empty scope",,"warning","verify_udf->verify_value","/train18.py","91","9","91","20"
+"Empty scope",,"warning","verify_byte->verify_value","/train18.py","100","9","100","20"
+"Empty scope",,"warning","verify_short->verify_value","/train18.py","109","9","109","20"
+"Empty scope",,"warning","verify_integer->verify_value","/train18.py","119","9","119","20"
+"Empty scope",,"warning","_make_type_verifier->element_verifier","/train18.py","122","9","122","24"
+"Empty scope",,"warning","obj->i","/train18.py","128","17","128","17"
+"Empty scope",,"warning","verify_array->verify_value","/train18.py","131","9","131","20"
+"Empty scope",,"warning","name->key_verifier
+dataType->key_verifier
+_make_type_verifier->key_verifier","/train18.py","134","9","134","20"
+"Empty scope",,"warning","_make_type_verifier->value_verifier","/train18.py","135","9","135","22"
+"Empty scope",,"warning","obj->k","/train18.py","141","17","141","17"
+"Empty scope",,"warning","obj->v","/train18.py","141","20","141","20"
+"Empty scope",,"warning","verify_map->verify_value","/train18.py","145","9","145","20"
+"Empty scope",,"warning","dataType->f","/train18.py","149","13","149","13"
+"Empty scope",,"warning","_make_type_verifier->verifier
+f->verifier
+new_name->verifier","/train18.py","150","13","150","20"
+"Empty scope",,"warning","verifiers->f","/train18.py","157","21","157","21"
+"Empty scope",,"warning","verifiers->verifier","/train18.py","157","24","157","31"
+"Empty scope",,"warning","verifiers->f","/train18.py","161","21","161","21"
+"Empty scope",,"warning","verifiers->verifier","/train18.py","161","24","161","31"
+"Empty scope",,"warning","obj->v
+zip->v
+verifiers->v","/train18.py","168","21","168","21"
+"Empty scope",,"warning","obj->_
+zip->_
+verifiers->_","/train18.py","168","25","168","25"
+"Empty scope",,"warning","verifiers->verifier
+obj->verifier
+zip->verifier","/train18.py","168","28","168","35"
+"Empty scope",,"warning","obj->d","/train18.py","171","17","171","17"
+"Empty scope",,"warning","verifiers->f","/train18.py","172","21","172","21"
+"Empty scope",,"warning","verifiers->verifier","/train18.py","172","24","172","31"
+"Empty scope",,"warning","verify_struct->verify_value","/train18.py","177","9","177","20"
+"Empty scope",,"warning","verify_default->verify_value","/train18.py","184","9","184","20"
+"Empty scope",,"warning","img_path->pil_image
+Image->pil_image","/train2.py","9","5","9","13"
+"Empty scope",,"warning","pil_image->draw
+ImageDraw->draw","/train2.py","10","5","10","8"
+"Empty scope",,"warning","predictions->name","/train2.py","12","9","12","12"
+"Empty scope",,"warning","predictions->top","/train2.py","12","16","12","18"
+"Empty scope",,"warning","predictions->right","/train2.py","12","21","12","25"
+"Empty scope",,"warning","predictions->bottom","/train2.py","12","28","12","33"
+"Empty scope",,"warning","predictions->left","/train2.py","12","36","12","39"
+"Empty scope",,"warning","name->name","/train2.py","18","9","18","12"
+"Empty scope",,"warning","name->text_width
+draw->text_width","/train2.py","21","9","21","18"
+"Empty scope",,"warning","name->text_height
+draw->text_height","/train2.py","21","21","21","31"
+"Empty scope",,"warning","file->im
+PIL->im","/train6.py","9","5","9","6"
+"Empty scope",,"warning","mode->im
+im->im","/train6.py","11","9","11","10"
+"Empty scope",,"warning",".0->.0
+_rect_to_css->.0
+_trim_css_to_bounds->.0
+_raw_face_locations->.0
+img->.0
+number_of_times_to_upsample->.0
+face->.0","/train8.py","12","16","12","145"
+"Empty scope",,"warning",".0->face
+_rect_to_css->face
+_trim_css_to_bounds->face
+_raw_face_locations->face
+img->face
+number_of_times_to_upsample->face
+face->face","/train8.py","12","77","12","80"
+"Empty scope",,"warning",".0->.0
+_rect_to_css->.0
+_trim_css_to_bounds->.0
+_raw_face_locations->.0
+img->.0
+number_of_times_to_upsample->.0
+face->.0
+model->.0","/train8.py","14","16","14","140"
+"Empty scope",,"warning",".0->face
+_rect_to_css->face
+_trim_css_to_bounds->face
+_raw_face_locations->face
+img->face
+number_of_times_to_upsample->face
+face->face
+model->face","/train8.py","14","72","14","75"
+"Empty scope",,"warning",".0->.0
+_rect_to_css->.0
+_trim_css_to_bounds->.0
+face->.0
+images->.0
+detections->.0","/train9.py","13","16","13","101"
+"Empty scope",,"warning",".0->face
+_rect_to_css->face
+_trim_css_to_bounds->face
+face->face
+images->face
+detections->face","/train9.py","13","83","13","86"
+"Empty scope",,"warning","number_of_times_to_upsample->raw_detections_batched
+images->raw_detections_batched
+batch_size->raw_detections_batched
+_raw_face_locations_batched->raw_detections_batched","/train9.py","15","5","15","26"

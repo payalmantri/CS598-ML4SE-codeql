@@ -12,6 +12,105 @@
 // select s, "This is an empty scope."
 
 import python
+string getQuickLocation(ControlFlowNode c) {
+    result = c.getLocation().getFile().getBaseName() + ":" + c.getLocation().getStartLine()
+    // result = "" + c.getLocation().getStartLine()
+}
+
+string formatParentChild(ControlFlowNode n, string ty){
+    ty = "If" and
+    result = ""
+    + "\"" + n.getNode() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + n.getATrueSuccessor().getNode()+ " " + getQuickLocation(n.getATrueSuccessor()) + "\"" + "\n"
+    + "\"" + n.getNode() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + n.getAFalseSuccessor().getNode()+ " " + getQuickLocation(n.getAFalseSuccessor()) + "\""
+    or
+    ty = "For" and
+    result = ""
+    + "\"" + n.getNode() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + ((ForNode)n).getSequence().getNode()+ " " + getQuickLocation(((ForNode)n).getSequence()) + "\"" + "\n"
+    + "\"" + ((ForNode)n).getSequence().getNode()+ " " + getQuickLocation(((ForNode)n).getSequence()) + "\"" + " -> " + "\"" + n.getNode() + " " + getQuickLocation(n) + "\""
+    or 
+    ty = "TryCatch" and
+    result = ""
+    + "\"" + n.getNode() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + n.getANormalSuccessor().getNode()+ " " + getQuickLocation(n.getANormalSuccessor()) + "\"" + "\n"
+    + "\"" + n.getNode() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + n.getAnExceptionalSuccessor().getNode()+ " " + getQuickLocation(n.getAnExceptionalSuccessor()) + "\""
+    or
+    ty = "Stmt" and
+    result = ""
+    + "\"" + n.getNode() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + n.getANormalSuccessor().getNode()+ " " + getQuickLocation(n.getANormalSuccessor()) + "\""
+            
+
+}
+
+string formatOutput1(ControlFlowNode c) {
+    if (c.getATrueSuccessor() != c.getAFalseSuccessor())
+    then result = formatParentChild(c, "If")
+    else
+        if c.getANormalSuccessor() != c.getAnExceptionalSuccessor()
+        then result = formatParentChild(c, "TryCatch")
+        else
+            if c instanceof IfExprNode
+            then result = formatParentChild(c, "If")   
+            else
+                if c instanceof ForNode
+                then result = formatParentChild(c, "For")        
+                else result = formatParentChild(c, "Stmt")
+                
+            
+}
+string formatOutput(ControlFlowNode c) {
+    if (c.getATrueSuccessor() != c.getAFalseSuccessor())
+    then result = ""
+        + "Node:"+ c.getNode() + ":" + getQuickLocation(c) + "\n"
+        + "Type:ConditionalBranch\n" 
+        + "Predecessor:" + c.getAPredecessor().getNode() + ":" + getQuickLocation(c.getAPredecessor()) + "\n"
+        + "TrueSuccessor:" + c.getATrueSuccessor().getNode() + ":" + getQuickLocation(c.getATrueSuccessor()) + "\n"
+        + "FalseSuccessor:"+ c.getAFalseSuccessor().getNode() + ":" + getQuickLocation(c.getAFalseSuccessor()) + "\n"
+    else
+        if c.getANormalSuccessor() != c.getAnExceptionalSuccessor()
+        then result = ""
+        + "Node:"+ c.getNode() + ":" + getQuickLocation(c) + "\n"
+        + "Type:TryCatch\n" 
+        + "Predecessor:" + c.getAPredecessor().getNode() + ":" + getQuickLocation(c.getAPredecessor()) + "\n"
+        + "TrueSuccessor:" + c.getANormalSuccessor().getNode() + ":" + getQuickLocation(c.getANormalSuccessor()) + "\n"
+        + "FalseSuccessor:"+ c.getAnExceptionalSuccessor().getNode() + ":" + getQuickLocation(c.getAnExceptionalSuccessor()) + "\n"
+        else
+            if c instanceof IfExprNode
+            then result = ""
+            + "Node:"+ c.getNode() + ":" + getQuickLocation(c) + "\n"
+            + "Type:Ternary\n" 
+            + "Predecessor:" + c.getAPredecessor().getNode() + ":" + getQuickLocation(c.getAPredecessor()) + "\n"
+            + "TrueSuccessor:" + c.getATrueSuccessor().getNode() + ":" + getQuickLocation(c.getATrueSuccessor()) + "\n"
+            + "FalseSuccessor:"+ c.getAFalseSuccessor().getNode() + ":" + getQuickLocation(c.getAFalseSuccessor()) + "\n"    
+            else
+                if c instanceof ForNode
+                then result = "For Loop\n"
+                + "Node:"+ c.getNode() + ":" + getQuickLocation(c) + "\n"
+                // + "Type:ForLoop\n" 
+                // + "Predecessor:" + c.getAPredecessor().getNode() + ":" + getQuickLocation(c.getAPredecessor()) + "\n"
+                + "InsideSuccessor:" + ((ForNode)c).getSequence().getNode() + ":" + getQuickLocation(((ForNode)c).getSequence()) + "\n"
+                // + "FalseSuccessor:"+ ((ForNode)c).getBasicBlock().getLastNode().getASuccessor().getNode() + ":" + getQuickLocation(((ForNode)c).getBasicBlock().getLastNode().getASuccessor()) + "\n"        
+                else result = ""
+                + "Node:"+ c.getNode() + ":" + getQuickLocation(c) + "\n"
+                + "Type:Statement\n" 
+                + "Predecessor:" + c.getAPredecessor().getNode() + ":" + getQuickLocation(c.getAPredecessor()) + "\n"
+                + "Successor:" + c.getANormalSuccessor().getNode() + ":" + getQuickLocation(c.getANormalSuccessor()) + "\n"
+                
+            
+}
+
+from File fl, ControlFlowNode c
+where //fl.getBaseName() = "train0.py" and 
+c.getLocation().getFile() = fl and 
+(c instanceof ForNode or c instanceof IfExprNode or c.getANormalSuccessor() != c.getAnExceptionalSuccessor() or c.getATrueSuccessor() != c.getAFalseSuccessor())//and (c.getANormalSuccessor() != c.getAnExceptionalSuccessor() or c.getATrueSuccessor() != c.getAFalseSuccessor() or c instanceof IfExprNode or c instanceof ForNode)
+select c, formatOutput1(c)
+
+
+// from Method f,  NodeWithSuccessors c
+// where exists(f.getBody())
+// select c, c.getDigraphPointers()
+//"control flow node: " + c.getNode() + " " +c.getNode().getLocation().getFile() + ":" + c.getNode().getLocation().getStartLine()+ "\n control flow node successor: "+ c.getANormalSuccessor().getNode() + " " +c.getANormalSuccessor().getNode().getLocation() + "\n control flow node true successor: "+ c.getATrueSuccessor().getNode()+ " " +c.getATrueSuccessor().getNode().getLocation()+"\n control flow node false successor: " + c.getAFalseSuccessor().getNode() + " " +c.getAFalseSuccessor().getNode().getLocation()
+// select c, "control flow node"
+
+
 
 // class NodeWithSuccessors extends ControlFlowNode {
 //     string getDigraphPointers() {
@@ -127,59 +226,3 @@ import python
 // from File fl, Stmt s
 // where fl.getBaseName() = "train0.py" and (s instanceof For or s instanceof If) and s.getLocation().getFile() = fl
 // select s, getControlFlowType(s)
-
-import python
-string getQuickLocation(ControlFlowNode c) {
-    result = c.getLocation().getFile().getBaseName() + ":" + c.getLocation().getStartLine()
-}
-string formatOutput(ControlFlowNode c) {
-    if (c.getATrueSuccessor() != c.getAFalseSuccessor())
-    then result = ""
-        + "Node:"+ c + ":" + getQuickLocation(c) + "\n"
-        + "Type:ConditionalBranch\n" 
-        + "Predecessor:" + c.getAPredecessor() + ":" + getQuickLocation(c.getAPredecessor()) + "\n"
-        + "TrueSuccessor:" + c.getATrueSuccessor() + ":" + getQuickLocation(c.getATrueSuccessor()) + "\n"
-        + "FalseSuccessor:"+ c.getAFalseSuccessor() + ":" + getQuickLocation(c.getAFalseSuccessor()) + "\n"
-    else
-        if c.getANormalSuccessor() != c.getAnExceptionalSuccessor()
-        then result = ""
-        + "Node:"+ c + ":" + getQuickLocation(c) + "\n"
-        + "Type:TryCatch\n" 
-        + "Predecessor:" + c.getAPredecessor() + ":" + getQuickLocation(c.getAPredecessor()) + "\n"
-        + "TrueSuccessor:" + c.getANormalSuccessor() + ":" + getQuickLocation(c.getANormalSuccessor()) + "\n"
-        + "FalseSuccessor:"+ c.getAnExceptionalSuccessor() + ":" + getQuickLocation(c.getAnExceptionalSuccessor()) + "\n"
-        else
-            if c instanceof IfExprNode
-            then result = ""
-            + "Node:"+ c + ":" + getQuickLocation(c) + "\n"
-            + "Type:Ternary\n" 
-            + "Predecessor:" + c.getAPredecessor() + ":" + getQuickLocation(c.getAPredecessor()) + "\n"
-            + "TrueSuccessor:" + c.getATrueSuccessor() + ":" + getQuickLocation(c.getATrueSuccessor()) + "\n"
-            + "FalseSuccessor:"+ c.getAFalseSuccessor() + ":" + getQuickLocation(c.getAFalseSuccessor()) + "\n"    
-            else
-                if c instanceof ForNode
-                then result = ""
-                + "Node:"+ c+ ":" + getQuickLocation(c) + "\n"
-                + "Type:ForLoop\n" 
-                + "Predecessor:" + c.getAPredecessor() + ":" + getQuickLocation(c.getAPredecessor()) + "\n"
-                + "TrueSuccessor:" + c.getATrueSuccessor() + ":" + getQuickLocation(c.getATrueSuccessor()) + "\n"
-                + "FalseSuccessor:"+ c.getAFalseSuccessor() + ":" + getQuickLocation(c.getAFalseSuccessor()) + "\n"        
-                else result = ""
-                + "Node:"+ c + ":" + getQuickLocation(c) + "\n"
-                + "Type:Statement\n" 
-                + "Predecessor:" + c.getAPredecessor() + ":" + getQuickLocation(c.getAPredecessor()) + "\n"
-                + "Successor:" + c.getANormalSuccessor() + ":" + getQuickLocation(c.getANormalSuccessor()) + "\n"
-                
-            
-}
-
-from File fl, ControlFlowNode c
-where fl.getBaseName() = "train0.py" and c.getLocation().getFile() = fl //and (c.getANormalSuccessor() != c.getAnExceptionalSuccessor() or c.getATrueSuccessor() != c.getAFalseSuccessor() or c instanceof IfExprNode or c instanceof ForNode)
-select c, formatOutput(c)
-
-
-// from Method f,  NodeWithSuccessors c
-// where exists(f.getBody())
-// select c, c.getDigraphPointers()
-//"control flow node: " + c.getNode() + " " +c.getNode().getLocation().getFile() + ":" + c.getNode().getLocation().getStartLine()+ "\n control flow node successor: "+ c.getANormalSuccessor().getNode() + " " +c.getANormalSuccessor().getNode().getLocation() + "\n control flow node true successor: "+ c.getATrueSuccessor().getNode()+ " " +c.getATrueSuccessor().getNode().getLocation()+"\n control flow node false successor: " + c.getAFalseSuccessor().getNode() + " " +c.getAFalseSuccessor().getNode().getLocation()
-// select c, "control flow node"

@@ -1,0 +1,20 @@
+"Empty scope",,"warning","class_dir->train_dir
+class_dir->os","/train0.py","30","9","30","17"
+"Empty scope",,"warning","img_path->train_dir
+img_path->class_dir
+img_path->os
+img_path->image_files_in_folder","/train0.py","35","13","35","20"
+"Empty scope",,"warning","image->img_path
+image->face_recognition","/train0.py","36","13","36","17"
+"Empty scope",,"warning","face_bounding_boxes->face_recognition
+face_bounding_boxes->image","/train0.py","37","13","37","31"
+"Empty scope",,"warning","n_neighbors->int
+n_neighbors->len
+n_neighbors->round
+n_neighbors->X
+n_neighbors->math","/train0.py","50","9","50","19"
+"Empty scope",,"warning","knn_clf->n_neighbors
+knn_clf->knn_algo
+knn_clf->neighbors","/train0.py","55","5","55","11"
+"Empty scope",,"warning","f->open
+f->model_save_path","/train0.py","60","45","60","45"

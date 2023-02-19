@@ -1,0 +1,21 @@
+digraph {train_dir->class_dir
+os->class_dir
+train_dir->img_path
+class_dir->img_path
+os->img_path
+image_files_in_folder->img_path
+img_path->image
+face_recognition->image
+face_recognition->face_bounding_boxes
+image->face_bounding_boxes
+int->n_neighbors
+len->n_neighbors
+round->n_neighbors
+X->n_neighbors
+math->n_neighbors
+n_neighbors->knn_clf
+knn_algo->knn_clf
+neighbors->knn_clf
+open->f
+model_save_path->f
+}

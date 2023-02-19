@@ -1,0 +1,18 @@
+digraph {known_face_locations->raw_landmarks
+face_image->raw_landmarks
+_raw_face_landmarks->raw_landmarks
+.0->.0
+face_image->.0
+num_jitters->.0
+raw_landmarks->.0
+raw_landmark_set->.0
+np->.0
+face_encoder->.0
+.0->raw_landmark_set
+face_image->raw_landmark_set
+num_jitters->raw_landmark_set
+raw_landmarks->raw_landmark_set
+raw_landmark_set->raw_landmark_set
+np->raw_landmark_set
+face_encoder->raw_landmark_set
+}

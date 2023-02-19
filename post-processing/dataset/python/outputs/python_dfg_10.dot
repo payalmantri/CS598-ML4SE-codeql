@@ -1,0 +1,15 @@
+digraph {img_path->pil_image
+Image->pil_image
+pil_image->draw
+ImageDraw->draw
+predictions->name
+predictions->top
+predictions->right
+predictions->bottom
+predictions->left
+name->name
+name->text_width
+draw->text_width
+name->text_height
+draw->text_height
+}
