@@ -1,3 +1,5 @@
 # CodeQL compilation caches
 .cache/
 ./post-processing/dataset/python/sample-database/python-database/
+**/*.lock.yml
+vscode-codeql-starter.code-workspace
