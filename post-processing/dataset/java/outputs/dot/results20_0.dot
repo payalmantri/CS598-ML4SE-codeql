@@ -1,0 +1,14 @@
+strict digraph {"if ... PlaneSweepCrackerHelper.java:577" -> "{ ... } PlaneSweepCrackerHelper.java:577"
+-> "0"
+"if ... PlaneSweepCrackerHelper.java:577" -> "<Expr>; PlaneSweepCrackerHelper.java:583"
+-> "0"
+->
+"if ... PlaneSweepCrackerHelper.java:580" -> "<Expr>; PlaneSweepCrackerHelper.java:581"
+-> "1"
+"if ... PlaneSweepCrackerHelper.java:580" -> "disconnectEdgeFromCluster_ PlaneSweepCrackerHelper.java:571"
+-> "1"
+
+-> "1"
+->
+exit
+}

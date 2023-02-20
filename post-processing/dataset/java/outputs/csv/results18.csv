@@ -1,0 +1,4 @@
+"Empty block",,"warning","""if (...) MultiVertexGeometryImpl.java:275"" -> ""<Expr>; MultiVertexGeometryImpl.java:276""
+""if (...) MultiVertexGeometryImpl.java:275"" -> ""<Expr>; MultiVertexGeometryImpl.java:278""","/src/main/java/com/esri/core/geometry/MultiVertexGeometryImpl.java","275","3","275","32"
+"Empty block",,"warning","""return ... MultiVertexGeometryImpl.java:280"" -> ""exit ""
+","/src/main/java/com/esri/core/geometry/MultiVertexGeometryImpl.java","280","3","280","12"
