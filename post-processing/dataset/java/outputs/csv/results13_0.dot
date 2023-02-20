@@ -1,0 +1,32 @@
+strict digraph {"if ... QuadTreeImpl.java:462" -> "throw ... QuadTreeImpl.java:463"
+-> "0"
+"if ... QuadTreeImpl.java:462" -> "var ...; QuadTreeImpl.java:465"
+-> "0"
+
+-> "0"
+->
+"while ... QuadTreeImpl.java:471" -> "{ ... } QuadTreeImpl.java:471"
+-> "1"
+"while ... QuadTreeImpl.java:471" -> "removeElement QuadTreeImpl.java:461"
+-> "1"
+"{ ... } QuadTreeImpl.java:471" -> "while ... QuadTreeImpl.java:471"
+-> "1"
+
+-> "1"
+->
+"if ... QuadTreeImpl.java:475" -> "{ ... } QuadTreeImpl.java:475"
+-> "2"
+"if ... QuadTreeImpl.java:475" -> "<Expr>; QuadTreeImpl.java:485"
+-> "2"
+
+-> "2"
+->
+"if ... QuadTreeImpl.java:478" -> "{ ... } QuadTreeImpl.java:478"
+-> "3"
+"if ... QuadTreeImpl.java:478" -> "<Expr>; QuadTreeImpl.java:485"
+-> "3"
+
+-> "3"
+->
+exit
+}

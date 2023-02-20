@@ -157,8 +157,8 @@ string formatOutput(ControlFlowNode c) {
 //  select c, formatOutput(c)
 
 from  ControlFlowNode c
-where  c.getEnclosingCallable().getDeclaringType().getName().matches("RelationalOperationsMatrix") //and c.getAPrimaryQlClass().matches("%Stmt") //and (c.getANormalSuccessor() != c.getAnExceptionalSuccessor() or c.getATrueSuccessor() != c.getAFalseSuccessor() or c instanceof IfExprNode or c instanceof ForNode)
-      and c.getEnclosingCallable().getName()= "areaPointPredicates_"
+where  c.getEnclosingCallable().getDeclaringType().getName().matches("Envelope2D") //and c.getAPrimaryQlClass().matches("%Stmt") //and (c.getANormalSuccessor() != c.getAnExceptionalSuccessor() or c.getATrueSuccessor() != c.getAFalseSuccessor() or c instanceof IfExprNode or c instanceof ForNode)
+      and c.getEnclosingCallable().getName()= "sqrMaxDistance"
     //  and c.getEnclosingCallable().getReturnType() instanceof Array
        and (c instanceof IfStmt  or c instanceof ForStmt or c instanceof TryStmt or c instanceof WhileStmt or c instanceof ReturnStmt)
 //where c.getEnclosingCallable().getDeclaringType().getName().matches("BucketSort")
