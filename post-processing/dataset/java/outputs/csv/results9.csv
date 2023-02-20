@@ -1,0 +1,6 @@
+"Empty block",,"warning","""if (...) RelationalOperationsMatrix.java:1147"" -> ""return ... RelationalOperationsMatrix.java:1152""
+","/src/main/java/com/esri/core/geometry/RelationalOperationsMatrix.java","1147","3","1151","28"
+"Empty block",,"warning","""return ... RelationalOperationsMatrix.java:1154"" -> ""exit ""
+","/src/main/java/com/esri/core/geometry/RelationalOperationsMatrix.java","1154","3","1154","15"
+"Empty block",,"warning","""return ... RelationalOperationsMatrix.java:1152"" -> ""exit ""
+","/src/main/java/com/esri/core/geometry/RelationalOperationsMatrix.java","1152","4","1152","15"
