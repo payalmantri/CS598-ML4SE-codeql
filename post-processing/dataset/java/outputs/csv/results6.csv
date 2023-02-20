@@ -1,0 +1,8 @@
+"Empty block",,"warning","""while (...) GeometryEngine.java:653"" -> ""{ ... } GeometryEngine.java:653""
+""while (...) GeometryEngine.java:653"" -> ""cutsList GeometryEngine.java:659""
+""{ ... } GeometryEngine.java:653"" -> ""while (...) GeometryEngine.java:653""
+","/src/main/java/com/esri/core/geometry/GeometryEngine.java","653","3","653","44"
+"Empty block",,"warning","""return ... toArray(...) GeometryEngine.java:659"" -> ""exit ""
+","/src/main/java/com/esri/core/geometry/GeometryEngine.java","659","3","659","43"
+"Empty block",,"warning","""return ... null GeometryEngine.java:645"" -> ""exit ""
+","/src/main/java/com/esri/core/geometry/GeometryEngine.java","645","4","645","15"

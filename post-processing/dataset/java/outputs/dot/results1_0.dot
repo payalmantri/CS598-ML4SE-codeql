@@ -1,0 +1,21 @@
+digraph {"if ... SegmentIteratorImpl.java:170" -> "{ ... } SegmentIteratorImpl.java:170"
+-> "0"
+"if ... SegmentIteratorImpl.java:170" -> "{ ... } SegmentIteratorImpl.java:173"
+-> "0"
+->
+"if ... SegmentIteratorImpl.java:179" -> "<Expr>; SegmentIteratorImpl.java:180"
+-> "1"
+"if ... SegmentIteratorImpl.java:179" -> "m_currentSegment SegmentIteratorImpl.java:182"
+-> "1"
+
+-> "1"
+->
+"if ... SegmentIteratorImpl.java:174" -> "throw ... SegmentIteratorImpl.java:175"
+-> "2"
+"if ... SegmentIteratorImpl.java:174" -> "<Expr>; SegmentIteratorImpl.java:176"
+-> "2"
+
+-> "2"
+->
+exit
+}

@@ -1,0 +1,6 @@
+"Empty block",,"warning","""while (...) GeometryEngine.java:406"" -> ""{ ... } GeometryEngine.java:406""
+""while (...) GeometryEngine.java:406"" -> ""var ...; GeometryEngine.java:410""
+""{ ... } GeometryEngine.java:406"" -> ""while (...) GeometryEngine.java:406""
+","/src/main/java/com/esri/core/geometry/GeometryEngine.java","406","3","406","37"
+"Empty block",,"warning","""return ... resultarr GeometryEngine.java:411"" -> ""exit ""
+","/src/main/java/com/esri/core/geometry/GeometryEngine.java","411","3","411","19"

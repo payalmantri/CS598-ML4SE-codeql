@@ -1,0 +1,71 @@
+strict digraph {"if ... RelationalOperationsMatrix.java:1123" -> "return ... RelationalOperationsMatrix.java:1124"
+-> "0"
+"if ... RelationalOperationsMatrix.java:1123" -> "if ... RelationalOperationsMatrix.java:1126"
+-> "0"
+
+-> "0"
+->
+"if ... RelationalOperationsMatrix.java:1126" -> "return ... RelationalOperationsMatrix.java:1127"
+-> "1"
+"if ... RelationalOperationsMatrix.java:1126" -> "if ... RelationalOperationsMatrix.java:1129"
+-> "1"
+
+-> "1"
+->
+"if ... RelationalOperationsMatrix.java:1129" -> "return ... RelationalOperationsMatrix.java:1130"
+-> "2"
+"if ... RelationalOperationsMatrix.java:1129" -> "if ... RelationalOperationsMatrix.java:1132"
+-> "2"
+
+-> "2"
+->
+"if ... RelationalOperationsMatrix.java:1132" -> "return ... RelationalOperationsMatrix.java:1133"
+-> "3"
+"if ... RelationalOperationsMatrix.java:1132" -> "if ... RelationalOperationsMatrix.java:1135"
+-> "3"
+
+-> "3"
+->
+"if ... RelationalOperationsMatrix.java:1135" -> "return ... RelationalOperationsMatrix.java:1136"
+-> "4"
+"if ... RelationalOperationsMatrix.java:1135" -> "if ... RelationalOperationsMatrix.java:1138"
+-> "4"
+
+-> "4"
+->
+"if ... RelationalOperationsMatrix.java:1138" -> "return ... RelationalOperationsMatrix.java:1139"
+-> "5"
+"if ... RelationalOperationsMatrix.java:1138" -> "RelationalOperations.Relation.unknown RelationalOperationsMatrix.java:1141"
+-> "5"
+
+-> "5"
+->
+"return ... RelationalOperations.Relation.unknown RelationalOperationsMatrix.java:1141" -> "exit "
+-> "6"
+
+-> "6"
+"return ... RelationalOperations.Relation.equals RelationalOperationsMatrix.java:1124" -> "exit "
+-> "6"
+
+-> "6"
+"return ... RelationalOperations.Relation.disjoint RelationalOperationsMatrix.java:1127" -> "exit "
+-> "6"
+
+-> "6"
+"return ... RelationalOperations.Relation.touches RelationalOperationsMatrix.java:1130" -> "exit "
+-> "6"
+
+-> "6"
+"return ... RelationalOperations.Relation.crosses RelationalOperationsMatrix.java:1133" -> "exit "
+-> "6"
+
+-> "6"
+"return ... RelationalOperations.Relation.contains RelationalOperationsMatrix.java:1136" -> "exit "
+-> "6"
+
+-> "6"
+"return ... RelationalOperations.Relation.overlaps RelationalOperationsMatrix.java:1139" -> "exit "
+-> "6"
+
+-> "6"
+}

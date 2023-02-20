@@ -1,0 +1,6 @@
+"Empty block",,"warning","""for (...;...;...) EditShape.java:555"" -> ""{ ... } EditShape.java:556""
+""for (...;...;...) EditShape.java:555"" -> ""env EditShape.java:566""
+""{ ... } EditShape.java:556"" -> ""for (...;...;...) EditShape.java:555""
+","/src/main/java/com/esri/core/geometry/EditShape.java","555","3","556","12"
+"Empty block",,"warning","""if (...) EditShape.java:558"" -> ""<Expr>; EditShape.java:559""
+""if (...) EditShape.java:558"" -> ""<Expr>; EditShape.java:561""","/src/main/java/com/esri/core/geometry/EditShape.java","558","4","558","15"

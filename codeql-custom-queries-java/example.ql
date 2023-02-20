@@ -14,30 +14,55 @@
 
 string formatParentChild(ControlFlowNode n, string ty){
    ty = "If" and
-   result = ""
-   + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" +((IfStmt)n).getThen().getControlFlowNode()+ " " + getQuickLocation(((IfStmt)n).getThen().getControlFlowNode()) + "\"" + "\n"
-   + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + ((IfStmt)n).getElse().getControlFlowNode()+ " " + getQuickLocation(((IfStmt)n).getElse().getControlFlowNode()) + "\""
-   or
+      if exists(((IfStmt)n).getElse())
+      then result = ""
+      + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" +((IfStmt)n).getThen().getControlFlowNode()+ " " + getQuickLocation(((IfStmt)n).getThen().getControlFlowNode()) + "\"" + "\n"
+      + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + ((IfStmt)n).getElse().getControlFlowNode()+ " " + getQuickLocation(((IfStmt)n).getElse().getControlFlowNode()) + "\""
+      // else  if exists(((ConditionNode)((IfStmt)n).getCondition().getControlFlowNode()).getATrueSuccessor()) then
+      // result = "hellp"
+      // // + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" +((IfStmt)n).getThen().getControlFlowNode()+ " " + getQuickLocation(((IfStmt)n).getThen().getControlFlowNode()) + "\"" + "\n"
+      // // +"\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\""+ ((ConditionNode)((IfStmt)n).getCondition()).getAFalseSuccessor()+ " " + getQuickLocation(((ConditionNode)((IfStmt)n).getCondition()).getAFalseSuccessor()) + "\"" +"\n"
+      else
+      result = ""
+      + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" +((IfStmt)n).getThen().getControlFlowNode()+ " " + getQuickLocation(((IfStmt)n).getThen().getControlFlowNode()) + "\"" + "\n"
+        +"\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\""+ ((ConditionNode)((IfStmt)n).getCondition()).getAFalseSuccessor()+ " " + getQuickLocation(((ConditionNode)((IfStmt)n).getCondition()).getAFalseSuccessor()) + "\"" +"\n"
+
+ or
    ty = "For" and
    result = ""
    + "\"" + n + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + ((ConditionNode)((ForStmt)n).getCondition()).getATrueSuccessor()+ " " + getQuickLocation(((ConditionNode)((ForStmt)n).getCondition()).getATrueSuccessor()) + "\"" + "\n"
-   + "\"" + n + " " + getQuickLocation(n) + "\"" + " -> " +  "\"" + ((ConditionNode)((ForStmt)n).getCondition()).getAFalseSuccessor()+ " " + getQuickLocation(((ConditionNode)((ForStmt)n).getCondition()).getAFalseSuccessor()) + "\""
+      + "\"" + n + " " + getQuickLocation(n) + "\"" + " -> " +  "\"" + ((ConditionNode)((ForStmt)n).getCondition()).getAFalseSuccessor()+ " " + getQuickLocation(((ConditionNode)((ForStmt)n).getCondition()).getAFalseSuccessor()) + "\"" + "\n"
+    + "\"" + ((ConditionNode)((ForStmt)n).getCondition()).getATrueSuccessor()+ " " + getQuickLocation(((ConditionNode)((ForStmt)n).getCondition()).getATrueSuccessor()) + "\""+ " -> " + "\"" + n + " " + getQuickLocation(n) + "\""  + "\n"
+
    or 
    ty = "TryCatch" and
    result = ""
    + "\"" + n + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + n.getANormalSuccessor()+ " " + getQuickLocation(n.getANormalSuccessor()) + "\"" + "\n"
-   + "\"" + n + " " + getQuickLocation(n) + "\"" + " -> " + "\"" +((TryStmt)n).getControlFlowNode().getAnExceptionSuccessor()+ " " + getQuickLocation(((TryStmt)n).getControlFlowNode().getAnExceptionSuccessor()) + "\""
+   + "\"" + n + " " + getQuickLocation(n) + "\"" + " -> " + "\"" +((TryStmt)n).getACatchClause().getControlFlowNode()+ " " + getQuickLocation(((TryStmt)n).getACatchClause().getControlFlowNode()) + "\""
+   or
+   ty = "While" and
+   result = ""
+   + "\"" + n + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + ((ConditionNode)((WhileStmt)n).getCondition()).getATrueSuccessor()+ " " + getQuickLocation(((ConditionNode)((WhileStmt)n).getCondition()).getATrueSuccessor()) + "\"" + "\n"
+      + "\"" + n + " " + getQuickLocation(n) + "\"" + " -> " +  "\"" + ((ConditionNode)((WhileStmt)n).getCondition()).getAFalseSuccessor()+ " " + getQuickLocation(((ConditionNode)((WhileStmt)n).getCondition()).getAFalseSuccessor()) + "\"" + "\n"
+    + "\"" + ((ConditionNode)((WhileStmt)n).getCondition()).getATrueSuccessor()+ " " + getQuickLocation(((ConditionNode)((WhileStmt)n).getCondition()).getATrueSuccessor()) + "\""+ " -> " + "\"" + n + " " + getQuickLocation(n) + "\""  + "\n"
+   or
+   ty = "Return" and
+   result = ""
+   //+ "\"" + n +" " + ((ReturnStmt)n).getResult()+" " + getQuickLocation(n) + "\"" + " -> " +  "\"exit \"" +"\n"
+   + "\"" + n +" " + getQuickLocation(n) + "\"" + " -> " +  "\"exit \"" +"\n"
+
    or
    ty = "Stmt" and
    result = ""
-   + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + n.getANormalSuccessor()+ " " + getQuickLocation(n.getANormalSuccessor()) + "\""
+   + "\"" + n.getEnclosingStmt() + " " + getQuickLocation(n) + "\"" + " -> " + "\"" + n.getANormalSuccessor()+ " " + getQuickLocation(n.getANormalSuccessor()) + "\"" + "\n"
+
            
 
 }
 
 string formatOutput1(ControlFlowNode c) {
    if (c instanceof IfStmt )
-   then result = formatParentChild(c, "If")
+      then result = formatParentChild(c, "If")
    else
        if c instanceof TryStmt
        then result = formatParentChild(c, "TryCatch")
@@ -46,8 +71,14 @@ string formatOutput1(ControlFlowNode c) {
          //   then result = formatParentChild(c, "If")   
            else
                if c instanceof ForStmt
-               then result = formatParentChild(c, "For")        
-               else result = formatParentChild(c, "Stmt")
+               then result = formatParentChild(c, "For") 
+         else 
+              if c instanceof WhileStmt
+                  then result = formatParentChild(c, "While")
+         else 
+               if c instanceof ReturnStmt
+                then result = formatParentChild(c, "Return")      
+            else result = formatParentChild(c, "Stmt")
                
            
 }
@@ -100,11 +131,16 @@ string formatOutput(ControlFlowNode c) {
      if (c instanceof IfStmt)
      then result = "ConditionalBranch"
      else
-         if (c instanceof TryStmt)
+         if (c instanceof CatchClause)
          then result = "TryCatch"
          else
             if (c instanceof ForStmt)
             then result = "ForLoop"
+         else 
+            if (c instanceof WhileStmt)
+            then result = "WhileLoop"
+         else if (c instanceof ReturnStmt)
+            then result = "Return"
             else result = "Statement"
  }
  
@@ -121,7 +157,9 @@ string formatOutput(ControlFlowNode c) {
 //  select c, formatOutput(c)
 
 from  ControlFlowNode c
-where  c.getEnclosingCallable().getDeclaringType().getName().matches("SegmentIteratorImpl") //and c.getAPrimaryQlClass().matches("%Stmt") //and (c.getANormalSuccessor() != c.getAnExceptionalSuccessor() or c.getATrueSuccessor() != c.getAFalseSuccessor() or c instanceof IfExprNode or c instanceof ForNode)
-      and c.getEnclosingCallable().getName().matches("%resetToPath%")
+where  c.getEnclosingCallable().getDeclaringType().getName().matches("RelationalOperationsMatrix") //and c.getAPrimaryQlClass().matches("%Stmt") //and (c.getANormalSuccessor() != c.getAnExceptionalSuccessor() or c.getATrueSuccessor() != c.getAFalseSuccessor() or c instanceof IfExprNode or c instanceof ForNode)
+      and c.getEnclosingCallable().getName()= "areaPointPredicates_"
+    //  and c.getEnclosingCallable().getReturnType() instanceof Array
+       and (c instanceof IfStmt  or c instanceof ForStmt or c instanceof TryStmt or c instanceof WhileStmt or c instanceof ReturnStmt)
 //where c.getEnclosingCallable().getDeclaringType().getName().matches("BucketSort")
 select c, formatOutput1(c)

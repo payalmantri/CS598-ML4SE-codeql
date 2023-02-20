@@ -1,0 +1,8 @@
+"Empty block",,"warning","""if (...) SegmentIteratorImpl.java:170"" -> ""{ ... } SegmentIteratorImpl.java:170""
+""if (...) SegmentIteratorImpl.java:170"" -> ""{ ... } SegmentIteratorImpl.java:173""","/src/main/java/com/esri/core/geometry/SegmentIteratorImpl.java","170","3","170","20"
+"Empty block",,"warning","""if (...) SegmentIteratorImpl.java:179"" -> ""<Expr>; SegmentIteratorImpl.java:180""
+""if (...) SegmentIteratorImpl.java:179"" -> ""m_currentSegment SegmentIteratorImpl.java:182""
+","/src/main/java/com/esri/core/geometry/SegmentIteratorImpl.java","179","3","179","50"
+"Empty block",,"warning","""if (...) SegmentIteratorImpl.java:174"" -> ""throw ... SegmentIteratorImpl.java:175""
+""if (...) SegmentIteratorImpl.java:174"" -> ""<Expr>; SegmentIteratorImpl.java:176""
+","/src/main/java/com/esri/core/geometry/SegmentIteratorImpl.java","174","4","174","31"

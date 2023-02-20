@@ -1,0 +1,40 @@
+strict digraph {"if ... RelationalOperationsMatrix.java:1984" -> "{ ... } RelationalOperationsMatrix.java:1985"
+-> "0"
+"if ... RelationalOperationsMatrix.java:1984" -> "if ... RelationalOperationsMatrix.java:1990"
+-> "0"
+
+-> "0"
+->
+"if ... RelationalOperationsMatrix.java:1990" -> "{ ... } RelationalOperationsMatrix.java:1991"
+-> "1"
+"if ... RelationalOperationsMatrix.java:1990" -> "if ... RelationalOperationsMatrix.java:1996"
+-> "1"
+
+-> "1"
+->
+"if ... RelationalOperationsMatrix.java:1996" -> "{ ... } RelationalOperationsMatrix.java:1997"
+-> "2"
+"if ... RelationalOperationsMatrix.java:1996" -> "if ... RelationalOperationsMatrix.java:2002"
+-> "2"
+
+-> "2"
+->
+"if ... RelationalOperationsMatrix.java:2002" -> "{ ... } RelationalOperationsMatrix.java:2003"
+-> "3"
+"if ... RelationalOperationsMatrix.java:2002" -> "if ... RelationalOperationsMatrix.java:2008"
+-> "3"
+
+-> "3"
+->
+"if ... RelationalOperationsMatrix.java:2008" -> "{ ... } RelationalOperationsMatrix.java:2009"
+-> "4"
+"if ... RelationalOperationsMatrix.java:2008" -> "bRelationKnown RelationalOperationsMatrix.java:2014"
+-> "4"
+
+-> "4"
+->
+"return ... RelationalOperationsMatrix.java:2014" -> "exit "
+-> "5"
+
+-> "5"
+}
