@@ -1,17 +1,15 @@
-digraph {.0->.0
-_rect_to_css->.0
-_trim_css_to_bounds->.0
-face->.0
-images->.0
-detections->.0
-.0->face
-_rect_to_css->face
-_trim_css_to_bounds->face
-face->face
-images->face
-detections->face
-number_of_times_to_upsample->raw_detections_batched
-images->raw_detections_batched
-batch_size->raw_detections_batched
-_raw_face_locations_batched->raw_detections_batched
+strict digraph {file->im
+PIL->im
+mode->im
+im->im
+np->file
+im->file
+np->mode
+im->mode
+np->load_image_file
+im->load_image_file
+file->im
+PIL->im
+mode->im
+im->im
 }

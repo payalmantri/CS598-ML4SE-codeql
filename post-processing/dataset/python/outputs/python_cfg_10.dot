@@ -1,0 +1,177 @@
+strict digraph {"Compare train18.py:59" -> "nullable train18.py:60"
+-> "0"
+"Compare train18.py:59" -> "False train18.py:65"
+-> "0"
+->
+"nullable train18.py:60" -> "True train18.py:61"
+-> "1"
+"nullable train18.py:60" -> "ValueError train18.py:63"
+-> "1"
+->
+"Compare train18.py:70" -> "Assert train18.py:70"
+-> "2"
+"Compare train18.py:70" -> "new_msg train18.py:71"
+-> "2"
+->
+"Compare train18.py:75" -> "TypeError train18.py:76"
+-> "3"
+"Compare train18.py:75" -> "Function verify_acceptable_types train18.py:73"
+-> "3"
+->
+"hasattr train18.py:87" -> "obj train18.py:87"
+-> "4"
+"hasattr train18.py:87" -> "UnaryExpr train18.py:87"
+-> "4"
+->
+"Compare train18.py:87" -> "UnaryExpr train18.py:87"
+-> "5"
+"Compare train18.py:87" -> "UnaryExpr train18.py:87"
+-> "5"
+->
+"Compare train18.py:97" -> "ValueError train18.py:98"
+-> "6"
+"Compare train18.py:97" -> "obj train18.py:97"
+-> "6"
+->
+"Compare train18.py:97" -> "ValueError train18.py:98"
+-> "7"
+"Compare train18.py:97" -> "Function verify_byte train18.py:94"
+-> "7"
+->
+"Compare train18.py:106" -> "ValueError train18.py:107"
+-> "8"
+"Compare train18.py:106" -> "obj train18.py:106"
+-> "8"
+->
+"Compare train18.py:106" -> "ValueError train18.py:107"
+-> "9"
+"Compare train18.py:106" -> "Function verify_short train18.py:103"
+-> "9"
+->
+"Compare train18.py:115" -> "ValueError train18.py:116"
+-> "10"
+"Compare train18.py:115" -> "obj train18.py:115"
+-> "10"
+->
+"Compare train18.py:115" -> "ValueError train18.py:116"
+-> "11"
+"Compare train18.py:115" -> "Function verify_integer train18.py:112"
+-> "11"
+->
+"For train18.py:128" -> "obj train18.py:128"
+-> "12"
+"obj train18.py:128" -> "For train18.py:128"
+-> "12"
+->
+"For train18.py:141" -> "Attribute train18.py:141"
+-> "13"
+"Attribute train18.py:141" -> "For train18.py:141"
+-> "13"
+->
+"isinstance train18.py:156" -> "verifiers train18.py:157"
+-> "14"
+"isinstance train18.py:156" -> "BoolExpr train18.py:159"
+-> "14"
+->
+"For train18.py:157" -> "verifiers train18.py:157"
+-> "15"
+"verifiers train18.py:157" -> "For train18.py:157"
+-> "15"
+->
+"isinstance train18.py:159" -> "getattr train18.py:159"
+-> "16"
+"isinstance train18.py:159" -> "isinstance train18.py:163"
+-> "16"
+->
+"getattr train18.py:159" -> "verifiers train18.py:161"
+-> "17"
+"getattr train18.py:159" -> "isinstance train18.py:163"
+-> "17"
+->
+"For train18.py:161" -> "verifiers train18.py:161"
+-> "18"
+"verifiers train18.py:161" -> "For train18.py:161"
+-> "18"
+->
+"isinstance train18.py:163" -> "len train18.py:164"
+-> "19"
+"isinstance train18.py:163" -> "hasattr train18.py:170"
+-> "19"
+->
+"Compare train18.py:164" -> "ValueError train18.py:165"
+-> "20"
+"Compare train18.py:164" -> "zip train18.py:168"
+-> "20"
+->
+"For train18.py:168" -> "zip train18.py:168"
+-> "21"
+"zip train18.py:168" -> "For train18.py:168"
+-> "21"
+->
+"hasattr train18.py:170" -> "obj train18.py:171"
+-> "22"
+"hasattr train18.py:170" -> "TypeError train18.py:175"
+-> "22"
+->
+"For train18.py:172" -> "verifiers train18.py:172"
+-> "23"
+"verifiers train18.py:172" -> "For train18.py:172"
+-> "23"
+->
+"UnaryExpr train18.py:187" -> "verify_value train18.py:188"
+-> "24"
+"UnaryExpr train18.py:187" -> "Function verify train18.py:186"
+-> "24"
+->
+"Compare train18.py:51" -> "Lambda train18.py:52"
+-> "25"
+"Compare train18.py:51" -> "Lambda train18.py:55"
+-> "25"
+->
+"isinstance train18.py:79" -> "Lambda train18.py:81"
+-> "26"
+"isinstance train18.py:79" -> "isinstance train18.py:83"
+-> "26"
+->
+"isinstance train18.py:83" -> "_make_type_verifier train18.py:84"
+-> "27"
+"isinstance train18.py:83" -> "isinstance train18.py:93"
+-> "27"
+->
+"isinstance train18.py:93" -> "FunctionExpr train18.py:94"
+-> "28"
+"isinstance train18.py:93" -> "isinstance train18.py:102"
+-> "28"
+->
+"isinstance train18.py:102" -> "FunctionExpr train18.py:103"
+-> "29"
+"isinstance train18.py:102" -> "isinstance train18.py:111"
+-> "29"
+->
+"isinstance train18.py:111" -> "FunctionExpr train18.py:112"
+-> "30"
+"isinstance train18.py:111" -> "isinstance train18.py:121"
+-> "30"
+->
+"isinstance train18.py:121" -> "_make_type_verifier train18.py:122"
+-> "31"
+"isinstance train18.py:121" -> "isinstance train18.py:133"
+-> "31"
+->
+"isinstance train18.py:133" -> "_make_type_verifier train18.py:134"
+-> "32"
+"isinstance train18.py:133" -> "isinstance train18.py:147"
+-> "32"
+->
+"isinstance train18.py:147" -> "List train18.py:148"
+-> "33"
+"isinstance train18.py:147" -> "FunctionExpr train18.py:180"
+-> "33"
+->
+"For train18.py:149" -> "Attribute train18.py:149"
+-> "34"
+"Attribute train18.py:149" -> "For train18.py:149"
+-> "34"
+->
+exit
+}

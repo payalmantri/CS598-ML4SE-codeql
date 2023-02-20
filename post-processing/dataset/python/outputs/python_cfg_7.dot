@@ -1,0 +1,52 @@
+strict digraph {"For train15.py:13" -> ".0 train15.py:13"
+-> "0"
+".0 train15.py:13" -> "For train15.py:13"
+-> "0"
+->
+"For train15.py:15" -> ".0 train15.py:15"
+-> "1"
+".0 train15.py:15" -> "For train15.py:15"
+-> "1"
+->
+"For train15.py:24" -> ".0 train15.py:24"
+-> "2"
+".0 train15.py:24" -> "For train15.py:24"
+-> "2"
+->
+"isinstance train15.py:3" -> "sorted train15.py:4"
+-> "3"
+"isinstance train15.py:3" -> "isinstance train15.py:6"
+-> "3"
+->
+"isinstance train15.py:6" -> "hasattr train15.py:7"
+-> "4"
+"isinstance train15.py:6" -> "hasattr train15.py:18"
+-> "4"
+->
+"hasattr train15.py:7" -> "zip train15.py:8"
+-> "5"
+"hasattr train15.py:7" -> "hasattr train15.py:9"
+-> "5"
+->
+"hasattr train15.py:9" -> "zip train15.py:10"
+-> "6"
+"hasattr train15.py:9" -> "names train15.py:12"
+-> "6"
+->
+"Compare train15.py:12" -> "range train15.py:13"
+-> "7"
+"Compare train15.py:12" -> "len train15.py:14"
+-> "7"
+->
+"Compare train15.py:14" -> "names train15.py:15"
+-> "8"
+"Compare train15.py:14" -> "zip train15.py:16"
+-> "8"
+->
+"hasattr train15.py:18" -> "sorted train15.py:19"
+-> "9"
+"hasattr train15.py:18" -> "TypeError train15.py:22"
+-> "9"
+->
+exit
+}

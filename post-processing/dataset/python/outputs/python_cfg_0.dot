@@ -1,0 +1,47 @@
+strict digraph {"For train0.py:30" -> "Attribute train0.py:30"
+-> "0"
+"Attribute train0.py:30" -> "For train0.py:30"
+-> "0"
+->
+"UnaryExpr train0.py:31" -> "Continue train0.py:32"
+-> "1"
+"UnaryExpr train0.py:31" -> "image_files_in_folder train0.py:35"
+-> "1"
+->
+"For train0.py:35" -> "image_files_in_folder train0.py:35"
+-> "2"
+"image_files_in_folder train0.py:35" -> "For train0.py:35"
+-> "2"
+->
+"Compare train0.py:39" -> "verbose train0.py:41"
+-> "3"
+"Compare train0.py:39" -> "X train0.py:45"
+-> "3"
+->
+"verbose train0.py:41" -> "print train0.py:42"
+-> "4"
+"verbose train0.py:41" -> "For train0.py:35"
+-> "4"
+->
+"Compare train0.py:42" -> "Str train0.py:42"
+-> "5"
+"Compare train0.py:42" -> "Str train0.py:42"
+-> "5"
+->
+"Compare train0.py:49" -> "int train0.py:50"
+-> "6"
+"Compare train0.py:49" -> "neighbors train0.py:55"
+-> "6"
+->
+"verbose train0.py:51" -> "print train0.py:52"
+-> "7"
+"verbose train0.py:51" -> "neighbors train0.py:55"
+-> "7"
+->
+"Compare train0.py:59" -> "open train0.py:60"
+-> "8"
+"Compare train0.py:59" -> "knn_clf train0.py:63"
+-> "8"
+->
+exit
+}

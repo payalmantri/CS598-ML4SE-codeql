@@ -1,0 +1,32 @@
+strict digraph {"For train10.py:11" -> ".0 train10.py:11"
+-> "0"
+".0 train10.py:11" -> "For train10.py:11"
+-> "0"
+->
+"For train10.py:11" -> ".0 train10.py:11"
+-> "1"
+".0 train10.py:11" -> "For train10.py:11"
+-> "1"
+->
+"For train10.py:15" -> ".0 train10.py:15"
+-> "2"
+".0 train10.py:15" -> "For train10.py:15"
+-> "2"
+->
+"For train10.py:27" -> ".0 train10.py:27"
+-> "3"
+".0 train10.py:27" -> "For train10.py:27"
+-> "3"
+->
+"Compare train10.py:14" -> "landmarks_as_tuples train10.py:25"
+-> "4"
+"Compare train10.py:14" -> "model train10.py:26"
+-> "4"
+->
+"Compare train10.py:26" -> "landmarks_as_tuples train10.py:31"
+-> "5"
+"Compare train10.py:26" -> "ValueError train10.py:33"
+-> "5"
+->
+exit
+}

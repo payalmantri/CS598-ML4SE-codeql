@@ -1,0 +1,67 @@
+strict digraph {"hasattr train32.py:45" -> "UnaryExpr train32.py:45"
+-> "0"
+"hasattr train32.py:45" -> "ExceptStmt train32.py:49"
+-> "0"
+->
+"UnaryExpr train32.py:45" -> "np train32.py:46"
+-> "1"
+"UnaryExpr train32.py:45" -> "arr train32.py:48"
+-> "1"
+->
+"np train32.py:46" -> "Attribute train32.py:46"
+-> "2"
+"np train32.py:46" -> "ExceptStmt train32.py:49"
+-> "2"
+->
+"Attribute train32.py:46" -> "arr train32.py:46"
+-> "3"
+"Attribute train32.py:46" -> "ExceptStmt train32.py:49"
+-> "3"
+->
+"Attribute train32.py:46" -> "casted train32.py:46"
+-> "4"
+"Attribute train32.py:46" -> "ExceptStmt train32.py:49"
+-> "4"
+->
+"Attribute train32.py:48" -> "dtype train32.py:48"
+-> "5"
+"Attribute train32.py:48" -> "ExceptStmt train32.py:49"
+-> "5"
+->
+"Attribute train32.py:48" -> "casted train32.py:48"
+-> "6"
+"Attribute train32.py:48" -> "ExceptStmt train32.py:49"
+-> "6"
+->
+"Attribute train32.py:53" -> "casted train32.py:54"
+-> "7"
+"Attribute train32.py:53" -> "np train32.py:61"
+-> "7"
+->
+"is_unsigned_integer_dtype train32.py:63" -> "arr train32.py:63"
+-> "8"
+"is_unsigned_integer_dtype train32.py:63" -> "BoolExpr train32.py:67"
+-> "8"
+->
+"Attribute train32.py:63" -> "OverflowError train32.py:64"
+-> "9"
+"Attribute train32.py:63" -> "BoolExpr train32.py:67"
+-> "9"
+->
+"is_integer_dtype train32.py:67" -> "BoolExpr train32.py:67"
+-> "10"
+"is_integer_dtype train32.py:67" -> "Function maybe_cast_to_integer_array train32.py:1"
+-> "10"
+->
+"is_float_dtype train32.py:67" -> "ValueError train32.py:69"
+-> "11"
+"is_float_dtype train32.py:67" -> "is_object_dtype train32.py:68"
+-> "11"
+->
+"is_object_dtype train32.py:68" -> "ValueError train32.py:69"
+-> "12"
+"is_object_dtype train32.py:68" -> "Function maybe_cast_to_integer_array train32.py:1"
+-> "12"
+->
+exit
+}

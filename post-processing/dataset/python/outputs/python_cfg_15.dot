@@ -1,0 +1,17 @@
+strict digraph {"isinstance train22.py:17" -> "len train22.py:17"
+-> "0"
+"isinstance train22.py:17" -> "is_categorical_dtype train22.py:22"
+-> "0"
+->
+"Compare train22.py:17" -> "np train22.py:21"
+-> "1"
+"Compare train22.py:17" -> "is_categorical_dtype train22.py:22"
+-> "1"
+->
+"is_categorical_dtype train22.py:22" -> "np train22.py:23"
+-> "2"
+"is_categorical_dtype train22.py:22" -> "maybe_convert_platform train22.py:25"
+-> "2"
+->
+exit
+}

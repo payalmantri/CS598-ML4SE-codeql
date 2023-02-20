@@ -1,0 +1,17 @@
+strict digraph {"iter train27.py:26" -> "len train27.py:27"
+-> "0"
+"iter train27.py:26" -> "ExceptStmt train27.py:29"
+-> "0"
+->
+"len train27.py:27" -> "isinstance train27.py:28"
+-> "1"
+"len train27.py:27" -> "ExceptStmt train27.py:29"
+-> "1"
+->
+"isinstance train27.py:28" -> "UnaryExpr train27.py:28"
+-> "2"
+"isinstance train27.py:28" -> "ExceptStmt train27.py:29"
+-> "2"
+->
+exit
+}

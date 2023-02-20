@@ -1,0 +1,47 @@
+strict digraph {"is_datetime64tz_dtype train29.py:17" -> "ImportExpr train29.py:18"
+-> "0"
+"is_datetime64tz_dtype train29.py:17" -> "is_categorical_dtype train29.py:20"
+-> "0"
+->
+"is_categorical_dtype train29.py:20" -> "ImportExpr train29.py:21"
+-> "1"
+"is_categorical_dtype train29.py:20" -> "isinstance train29.py:24"
+-> "1"
+->
+"UnaryExpr train29.py:24" -> "dtype train29.py:25"
+-> "2"
+"UnaryExpr train29.py:24" -> "BoolExpr train29.py:27"
+-> "2"
+->
+"length train29.py:27" -> "is_integer_dtype train29.py:27"
+-> "3"
+"length train29.py:27" -> "BoolExpr train29.py:30"
+-> "3"
+->
+"is_integer_dtype train29.py:27" -> "isna train29.py:27"
+-> "4"
+"is_integer_dtype train29.py:27" -> "BoolExpr train29.py:30"
+-> "4"
+->
+"isna train29.py:27" -> "np train29.py:29"
+-> "5"
+"isna train29.py:27" -> "BoolExpr train29.py:30"
+-> "5"
+->
+"isinstance train29.py:30" -> "dtype train29.py:30"
+-> "6"
+"isinstance train29.py:30" -> "np train29.py:37"
+-> "6"
+->
+"Compare train29.py:30" -> "object train29.py:33"
+-> "7"
+"Compare train29.py:30" -> "np train29.py:37"
+-> "7"
+->
+"UnaryExpr train29.py:34" -> "to_str train29.py:35"
+-> "8"
+"UnaryExpr train29.py:34" -> "np train29.py:37"
+-> "8"
+->
+exit
+}

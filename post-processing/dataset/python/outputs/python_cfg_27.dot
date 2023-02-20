@@ -1,0 +1,7 @@
+strict digraph {"Compare train5.py:10" -> "np train5.py:11"
+-> "0"
+"Compare train5.py:10" -> "np train5.py:13"
+-> "0"
+->
+exit
+}

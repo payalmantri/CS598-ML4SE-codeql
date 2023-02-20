@@ -1,0 +1,7 @@
+strict digraph {"Compare train28.py:18" -> "infer_dtype_from_scalar train28.py:19"
+-> "0"
+"Compare train28.py:18" -> "value train28.py:21"
+-> "0"
+->
+exit
+}

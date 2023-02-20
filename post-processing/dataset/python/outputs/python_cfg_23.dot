@@ -1,0 +1,12 @@
+strict digraph {"Compare train31.py:28" -> "dtype train31.py:28"
+-> "0"
+"Compare train31.py:28" -> "subarr train31.py:40"
+-> "0"
+->
+"Compare train31.py:28" -> "isna train31.py:35"
+-> "1"
+"Compare train31.py:28" -> "subarr train31.py:40"
+-> "1"
+->
+exit
+}

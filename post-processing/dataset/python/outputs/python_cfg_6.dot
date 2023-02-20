@@ -1,0 +1,77 @@
+strict digraph {"Compare train14.py:4" -> "NullType train14.py:5"
+-> "0"
+"Compare train14.py:4" -> "hasattr train14.py:7"
+-> "0"
+->
+"hasattr train14.py:7" -> "obj train14.py:8"
+-> "1"
+"hasattr train14.py:7" -> "_type_mappings train14.py:10"
+-> "1"
+->
+"Compare train14.py:11" -> "DecimalType train14.py:13"
+-> "2"
+"Compare train14.py:11" -> "dataType train14.py:14"
+-> "2"
+->
+"Compare train14.py:14" -> "dataType train14.py:15"
+-> "3"
+"Compare train14.py:14" -> "isinstance train14.py:17"
+-> "3"
+->
+"isinstance train14.py:17" -> "obj train14.py:18"
+-> "4"
+"isinstance train14.py:17" -> "isinstance train14.py:22"
+-> "4"
+->
+"For train14.py:18" -> "Attribute train14.py:18"
+-> "5"
+"Attribute train14.py:18" -> "For train14.py:18"
+-> "5"
+->
+"Compare train14.py:19" -> "value train14.py:19"
+-> "6"
+"Compare train14.py:19" -> "For train14.py:18"
+-> "6"
+->
+"Compare train14.py:19" -> "MapType train14.py:20"
+-> "7"
+"Compare train14.py:19" -> "For train14.py:18"
+-> "7"
+->
+"isinstance train14.py:22" -> "obj train14.py:23"
+-> "8"
+"isinstance train14.py:22" -> "isinstance train14.py:27"
+-> "8"
+->
+"For train14.py:23" -> "obj train14.py:23"
+-> "9"
+"obj train14.py:23" -> "For train14.py:23"
+-> "9"
+->
+"Compare train14.py:24" -> "ArrayType train14.py:25"
+-> "10"
+"Compare train14.py:24" -> "For train14.py:23"
+-> "10"
+->
+"isinstance train14.py:27" -> "obj train14.py:28"
+-> "11"
+"isinstance train14.py:27" -> "Try train14.py:33"
+-> "11"
+->
+"Compare train14.py:28" -> "ArrayType train14.py:29"
+-> "12"
+"Compare train14.py:28" -> "TypeError train14.py:31"
+-> "12"
+->
+"_infer_schema train14.py:34" -> "obj train14.py:34"
+-> "13"
+"_infer_schema train14.py:34" -> "ExceptStmt train14.py:35"
+-> "13"
+->
+"_infer_schema train14.py:34" -> "Return train14.py:34"
+-> "14"
+"_infer_schema train14.py:34" -> "ExceptStmt train14.py:35"
+-> "14"
+->
+exit
+}

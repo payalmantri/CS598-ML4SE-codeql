@@ -122,6 +122,6 @@ string formatOutput(ControlFlowNode c) {
 
 from  ControlFlowNode c
 where  c.getEnclosingCallable().getDeclaringType().getName().matches("SegmentIteratorImpl") //and c.getAPrimaryQlClass().matches("%Stmt") //and (c.getANormalSuccessor() != c.getAnExceptionalSuccessor() or c.getATrueSuccessor() != c.getAFalseSuccessor() or c instanceof IfExprNode or c instanceof ForNode)
-      and c.getEnclosingCallable().getName() = "resetToPath"
+      and c.getEnclosingCallable().getName().matches("%resetToPath%")
 //where c.getEnclosingCallable().getDeclaringType().getName().matches("BucketSort")
 select c, formatOutput1(c)

@@ -1,0 +1,82 @@
+strict digraph {"For train21.py:29" -> ".0 train21.py:29"
+-> "0"
+".0 train21.py:29" -> "For train21.py:29"
+-> "0"
+->
+"For train21.py:42" -> ".0 train21.py:42"
+-> "1"
+".0 train21.py:42" -> "For train21.py:42"
+-> "1"
+->
+"For train21.py:46" -> ".0 train21.py:46"
+-> "2"
+".0 train21.py:46" -> "For train21.py:46"
+-> "2"
+->
+"For train21.py:60" -> ".0 train21.py:60"
+-> "3"
+".0 train21.py:60" -> "For train21.py:60"
+-> "3"
+->
+"Compare train21.py:8" -> "iter train21.py:9"
+-> "4"
+"Compare train21.py:8" -> "Try train21.py:18"
+-> "4"
+->
+"Compare train21.py:11" -> "max train21.py:12"
+-> "5"
+"Compare train21.py:11" -> "max train21.py:14"
+-> "5"
+->
+"Compare train21.py:15" -> "List train21.py:15"
+-> "6"
+"Compare train21.py:15" -> "result train21.py:15"
+-> "6"
+->
+"len train21.py:19" -> "size train21.py:19"
+-> "7"
+"len train21.py:19" -> "ExceptStmt train21.py:20"
+-> "7"
+->
+"Compare train21.py:23" -> "sorted train21.py:24"
+-> "8"
+"Compare train21.py:23" -> "key train21.py:27"
+-> "8"
+->
+"Compare train21.py:27" -> "iter train21.py:28"
+-> "9"
+"Compare train21.py:27" -> "iter train21.py:45"
+-> "9"
+->
+"UnaryExpr train21.py:30" -> "result train21.py:31"
+-> "10"
+"UnaryExpr train21.py:30" -> "heapify train21.py:32"
+-> "10"
+->
+"For train21.py:36" -> "it train21.py:36"
+-> "11"
+"it train21.py:36" -> "For train21.py:36"
+-> "11"
+->
+"Compare train21.py:37" -> "_heapreplace train21.py:38"
+-> "12"
+"Compare train21.py:37" -> "For train21.py:36"
+-> "12"
+->
+"UnaryExpr train21.py:47" -> "result train21.py:48"
+-> "13"
+"UnaryExpr train21.py:47" -> "heapify train21.py:49"
+-> "13"
+->
+"For train21.py:53" -> "it train21.py:53"
+-> "14"
+"it train21.py:53" -> "For train21.py:53"
+-> "14"
+->
+"Compare train21.py:55" -> "_heapreplace train21.py:56"
+-> "15"
+"Compare train21.py:55" -> "For train21.py:53"
+-> "15"
+->
+exit
+}

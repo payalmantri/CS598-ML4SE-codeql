@@ -1,0 +1,12 @@
+strict digraph {"For train26.py:26" -> ".0 train26.py:26"
+-> "0"
+".0 train26.py:26" -> "For train26.py:26"
+-> "0"
+->
+"all train26.py:26" -> "isinstance train26.py:28"
+-> "1"
+"all train26.py:26" -> "Return train26.py:26"
+-> "1"
+->
+exit
+}

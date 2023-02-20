@@ -1,0 +1,13 @@
+strict digraph {img->img
+number_of_times_to_upsample->img
+face_detector->img
+img->number_of_times_to_upsample
+number_of_times_to_upsample->number_of_times_to_upsample
+face_detector->number_of_times_to_upsample
+img->model
+number_of_times_to_upsample->model
+face_detector->model
+img->_raw_face_locations
+number_of_times_to_upsample->_raw_face_locations
+face_detector->_raw_face_locations
+}

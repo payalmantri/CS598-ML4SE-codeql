@@ -1,0 +1,17 @@
+strict digraph {"For train8.py:12" -> ".0 train8.py:12"
+-> "0"
+".0 train8.py:12" -> "For train8.py:12"
+-> "0"
+->
+"For train8.py:14" -> ".0 train8.py:14"
+-> "1"
+".0 train8.py:14" -> "For train8.py:14"
+-> "1"
+->
+"Compare train8.py:11" -> "_raw_face_locations train8.py:12"
+-> "2"
+"Compare train8.py:11" -> "_raw_face_locations train8.py:14"
+-> "2"
+->
+exit
+}

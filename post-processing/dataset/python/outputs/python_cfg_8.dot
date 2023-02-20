@@ -1,0 +1,27 @@
+strict digraph {"For train16.py:4" -> ".0 train16.py:4"
+-> "0"
+".0 train16.py:4" -> "For train16.py:4"
+-> "0"
+->
+"isinstance train16.py:3" -> "any train16.py:4"
+-> "1"
+"isinstance train16.py:3" -> "isinstance train16.py:5"
+-> "1"
+->
+"isinstance train16.py:5" -> "_has_nulltype train16.py:6"
+-> "2"
+"isinstance train16.py:5" -> "isinstance train16.py:7"
+-> "2"
+->
+"isinstance train16.py:7" -> "BoolExpr train16.py:8"
+-> "3"
+"isinstance train16.py:7" -> "isinstance train16.py:10"
+-> "3"
+->
+"_has_nulltype train16.py:8" -> "Return train16.py:8"
+-> "4"
+"_has_nulltype train16.py:8" -> "_has_nulltype train16.py:8"
+-> "4"
+->
+exit
+}

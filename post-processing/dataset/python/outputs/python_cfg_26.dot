@@ -1,0 +1,22 @@
+strict digraph {"Compare train34.py:83" -> "grouped_hist train34.py:84"
+-> "0"
+"Compare train34.py:83" -> "column train34.py:91"
+-> "0"
+->
+"Compare train34.py:91" -> "isinstance train34.py:92"
+-> "1"
+"Compare train34.py:91" -> "data train34.py:95"
+-> "1"
+->
+"UnaryExpr train34.py:92" -> "column train34.py:93"
+-> "2"
+"UnaryExpr train34.py:92" -> "data train34.py:94"
+-> "2"
+->
+"For train34.py:103" -> "enumerate train34.py:103"
+-> "3"
+"enumerate train34.py:103" -> "For train34.py:103"
+-> "3"
+->
+exit
+}

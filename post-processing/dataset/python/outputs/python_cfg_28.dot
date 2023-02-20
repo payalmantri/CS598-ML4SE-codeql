@@ -1,0 +1,7 @@
+strict digraph {"mode train6.py:10" -> "im train6.py:11"
+-> "0"
+"mode train6.py:10" -> "np train6.py:12"
+-> "0"
+->
+exit
+}

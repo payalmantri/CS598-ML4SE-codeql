@@ -1,0 +1,17 @@
+strict digraph {"hasattr train23.py:32" -> "UnaryExpr train23.py:32"
+-> "0"
+"hasattr train23.py:32" -> "hasattr train23.py:32"
+-> "0"
+->
+"hasattr train23.py:32" -> "UnaryExpr train23.py:32"
+-> "1"
+"hasattr train23.py:32" -> "UnaryExpr train23.py:32"
+-> "1"
+->
+"UnaryExpr train23.py:35" -> "False train23.py:36"
+-> "2"
+"UnaryExpr train23.py:35" -> "True train23.py:38"
+-> "2"
+->
+exit
+}

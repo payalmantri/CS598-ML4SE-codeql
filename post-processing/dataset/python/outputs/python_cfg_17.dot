@@ -1,0 +1,32 @@
+strict digraph {"isinstance train24.py:41" -> "isinstance train24.py:43"
+-> "0"
+"isinstance train24.py:41" -> "Return train24.py:41"
+-> "0"
+->
+"UnaryExpr train24.py:43" -> "BoolExpr train24.py:46"
+-> "1"
+"UnaryExpr train24.py:43" -> "Return train24.py:41"
+-> "1"
+->
+"isinstance train24.py:46" -> "obj train24.py:46"
+-> "2"
+"isinstance train24.py:46" -> "UnaryExpr train24.py:46"
+-> "2"
+->
+"Compare train24.py:46" -> "UnaryExpr train24.py:46"
+-> "3"
+"Compare train24.py:46" -> "UnaryExpr train24.py:46"
+-> "3"
+->
+"Compare train24.py:49" -> "isinstance train24.py:49"
+-> "4"
+"Compare train24.py:49" -> "UnaryExpr train24.py:49"
+-> "4"
+->
+"isinstance train24.py:49" -> "UnaryExpr train24.py:49"
+-> "5"
+"isinstance train24.py:49" -> "UnaryExpr train24.py:49"
+-> "5"
+->
+exit
+}

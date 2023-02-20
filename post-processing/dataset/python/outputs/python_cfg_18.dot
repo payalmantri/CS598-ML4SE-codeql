@@ -1,0 +1,22 @@
+strict digraph {"For train25.py:42" -> ".0 train25.py:42"
+-> "0"
+".0 train25.py:42" -> "For train25.py:42"
+-> "0"
+->
+"is_list_like train25.py:41" -> "hasattr train25.py:41"
+-> "1"
+"is_list_like train25.py:41" -> "Return train25.py:41"
+-> "1"
+->
+"hasattr train25.py:41" -> "len train25.py:42"
+-> "2"
+"hasattr train25.py:41" -> "Return train25.py:41"
+-> "2"
+->
+"Compare train25.py:42" -> "all train25.py:42"
+-> "3"
+"Compare train25.py:42" -> "Return train25.py:41"
+-> "3"
+->
+exit
+}

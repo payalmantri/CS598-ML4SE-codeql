@@ -1,5 +1,13 @@
-digraph {file->im
-PIL->im
-mode->im
-im->im
+strict digraph {max->css
+min->css
+css->css
+image_shape->css
+max->image_shape
+min->image_shape
+css->image_shape
+image_shape->image_shape
+max->_trim_css_to_bounds
+min->_trim_css_to_bounds
+css->_trim_css_to_bounds
+image_shape->_trim_css_to_bounds
 }

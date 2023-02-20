@@ -40,10 +40,6 @@
 			"uri": "codeql-zip-archive://1-135/c:\\Users\\siddh\\AppData\\Roaming\\Code\\User\\workspaceStorage\\bd377d444463ce1e857768e61cd36bcd\\GitHub.vscode-codeql\\java\\codeql_db\\src.zip"
 		},
 		{
-			"name": "[python-database source archive]",
-			"uri": "codeql-zip-archive://1-145/c:\\Users\\siddh\\Documents\\Projects\\Masters\\UIUC\\CS598-JBR\\Project\\CS598-JBR-Sp2023-Project\\dataset\\python\\sample-database\\python-database\\src.zip"
-		},
-		{
 			"name": "[Esri/geometry-api-java source archive]",
 			"uri": "codeql-zip-archive://1-135/c:\\Users\\siddh\\AppData\\Roaming\\Code\\User\\workspaceStorage\\21838071379d818259ce2419150618d2\\GitHub.vscode-codeql\\java\\codeql_db\\src.zip"
 		},

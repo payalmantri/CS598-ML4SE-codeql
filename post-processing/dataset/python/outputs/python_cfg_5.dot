@@ -1,0 +1,22 @@
+strict digraph {"Compare train13.py:5" -> "ByteType train13.py:6"
+-> "0"
+"Compare train13.py:5" -> "size train13.py:7"
+-> "0"
+->
+"Compare train13.py:7" -> "ShortType train13.py:8"
+-> "1"
+"Compare train13.py:7" -> "size train13.py:9"
+-> "1"
+->
+"Compare train13.py:9" -> "IntegerType train13.py:10"
+-> "2"
+"Compare train13.py:9" -> "size train13.py:11"
+-> "2"
+->
+"Compare train13.py:11" -> "LongType train13.py:12"
+-> "3"
+"Compare train13.py:11" -> "Function _int_size_to_type train13.py:1"
+-> "3"
+->
+exit
+}

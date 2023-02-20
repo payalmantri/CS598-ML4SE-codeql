@@ -1,0 +1,42 @@
+strict digraph {"For train1.py:37" -> ".0 train1.py:37"
+-> "0"
+".0 train1.py:37" -> "For train1.py:37"
+-> "0"
+->
+"For train1.py:40" -> ".0 train1.py:40"
+-> "1"
+".0 train1.py:40" -> "For train1.py:40"
+-> "1"
+->
+"rec train1.py:40" -> "pred train1.py:40"
+-> "2"
+"rec train1.py:40" -> "Str train1.py:40"
+-> "2"
+->
+"UnaryExpr train1.py:13" -> "Exception train1.py:14"
+-> "3"
+"UnaryExpr train1.py:13" -> "os train1.py:13"
+-> "3"
+->
+"Compare train1.py:13" -> "Exception train1.py:14"
+-> "4"
+"Compare train1.py:13" -> "BoolExpr train1.py:16"
+-> "4"
+->
+"Compare train1.py:16" -> "model_path train1.py:16"
+-> "5"
+"Compare train1.py:16" -> "knn_clf train1.py:20"
+-> "5"
+->
+"Compare train1.py:16" -> "Exception train1.py:17"
+-> "6"
+"Compare train1.py:16" -> "knn_clf train1.py:20"
+-> "6"
+->
+"Compare train1.py:29" -> "List train1.py:30"
+-> "7"
+"Compare train1.py:29" -> "face_recognition train1.py:33"
+-> "7"
+->
+exit
+}

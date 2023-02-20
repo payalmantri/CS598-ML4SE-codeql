@@ -1,0 +1,12 @@
+strict digraph {"Compare train33.py:31" -> "_grouped_plot train33.py:32"
+-> "0"
+"Compare train33.py:31" -> "ax train33.py:34"
+-> "0"
+->
+"Compare train33.py:34" -> "plt train33.py:35"
+-> "1"
+"Compare train33.py:34" -> "ax train33.py:38"
+-> "1"
+->
+exit
+}

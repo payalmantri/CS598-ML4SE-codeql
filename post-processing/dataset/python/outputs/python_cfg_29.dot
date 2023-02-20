@@ -1,0 +1,7 @@
+strict digraph {"Compare train7.py:11" -> "cnn_face_detector train7.py:12"
+-> "0"
+"Compare train7.py:11" -> "face_detector train7.py:14"
+-> "0"
+->
+exit
+}

@@ -1,0 +1,32 @@
+strict digraph {"from_ddl_schema train12.py:53" -> "Return train12.py:53"
+-> "0"
+"from_ddl_schema train12.py:53" -> "ExceptStmt train12.py:54"
+-> "0"
+->
+"from_ddl_datatype train12.py:57" -> "Return train12.py:57"
+-> "1"
+"from_ddl_datatype train12.py:57" -> "ExceptStmt train12.py:58"
+-> "1"
+->
+"Attribute train12.py:61" -> "Attribute train12.py:61"
+-> "2"
+"Attribute train12.py:61" -> "ExceptStmt train12.py:62"
+-> "2"
+->
+"Attribute train12.py:61" -> "BinaryExpr train12.py:61"
+-> "3"
+"Attribute train12.py:61" -> "ExceptStmt train12.py:62"
+-> "3"
+->
+"BinaryExpr train12.py:61" -> "from_ddl_datatype train12.py:61"
+-> "4"
+"BinaryExpr train12.py:61" -> "ExceptStmt train12.py:62"
+-> "4"
+->
+"from_ddl_datatype train12.py:61" -> "Return train12.py:61"
+-> "5"
+"from_ddl_datatype train12.py:61" -> "ExceptStmt train12.py:62"
+-> "5"
+->
+exit
+}

@@ -1,7 +1,27 @@
-digraph {type->dataType
-obj->dataType
-_type_mappings->dataType
-obj->key
-obj->value
-obj->v
+strict digraph {.0->.0
+any->.0
+f->.0
+_has_nulltype->.0
+dt->.0
+any->f
+f->f
+.0->f
+_has_nulltype->f
+dt->f
+isinstance->dt
+NullType->dt
+dt->dt
+isinstance->_has_nulltype
+NullType->_has_nulltype
+dt->_has_nulltype
+.0->.0
+any->.0
+f->.0
+_has_nulltype->.0
+dt->.0
+any->f
+f->f
+.0->f
+_has_nulltype->f
+dt->f
 }

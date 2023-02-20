@@ -1,0 +1,157 @@
+strict digraph {"reverse train19.py:22" -> "_heapify_max train19.py:23"
+-> "0"
+"reverse train19.py:22" -> "heapify train19.py:28"
+-> "0"
+->
+"Compare train19.py:33" -> "enumerate train19.py:34"
+-> "1"
+"Compare train19.py:33" -> "enumerate train19.py:57"
+-> "1"
+->
+"For train19.py:34" -> "enumerate train19.py:34"
+-> "2"
+"enumerate train19.py:34" -> "For train19.py:34"
+-> "2"
+->
+"next train19.py:36" -> "order train19.py:36"
+-> "3"
+"next train19.py:36" -> "ExceptStmt train19.py:37"
+-> "3"
+->
+"BinaryExpr train19.py:36" -> "it train19.py:36"
+-> "4"
+"BinaryExpr train19.py:36" -> "ExceptStmt train19.py:37"
+-> "4"
+->
+"h_append train19.py:36" -> "For train19.py:34"
+-> "5"
+"h_append train19.py:36" -> "ExceptStmt train19.py:37"
+-> "5"
+->
+"Compare train19.py:40" -> "Try train19.py:41"
+-> "6"
+"Compare train19.py:40" -> "h train19.py:49"
+-> "6"
+->
+"Subscript train19.py:43" -> "Tuple train19.py:43"
+-> "7"
+"Subscript train19.py:43" -> "ExceptStmt train19.py:47"
+-> "7"
+->
+"Tuple train19.py:43" -> "value train19.py:43"
+-> "8"
+"Tuple train19.py:43" -> "ExceptStmt train19.py:47"
+-> "8"
+->
+"Yield train19.py:44" -> "next train19.py:45"
+-> "9"
+"Yield train19.py:44" -> "ExceptStmt train19.py:47"
+-> "9"
+->
+"next train19.py:45" -> "s train19.py:45"
+-> "10"
+"next train19.py:45" -> "ExceptStmt train19.py:47"
+-> "10"
+->
+"Subscript train19.py:45" -> "_heapreplace train19.py:46"
+-> "11"
+"Subscript train19.py:45" -> "ExceptStmt train19.py:47"
+-> "11"
+->
+"_heapreplace train19.py:46" -> "While train19.py:42"
+-> "12"
+"_heapreplace train19.py:46" -> "ExceptStmt train19.py:47"
+-> "12"
+->
+"h train19.py:49" -> "h train19.py:51"
+-> "13"
+"h train19.py:49" -> "Return train19.py:55"
+-> "13"
+->
+"For train19.py:53" -> "it train19.py:53"
+-> "14"
+"it train19.py:53" -> "For train19.py:53"
+-> "14"
+->
+"For train19.py:57" -> "enumerate train19.py:57"
+-> "15"
+"enumerate train19.py:57" -> "For train19.py:57"
+-> "15"
+->
+"next train19.py:59" -> "value train19.py:59"
+-> "16"
+"next train19.py:59" -> "ExceptStmt train19.py:61"
+-> "16"
+->
+"key train19.py:60" -> "order train19.py:60"
+-> "17"
+"key train19.py:60" -> "ExceptStmt train19.py:61"
+-> "17"
+->
+"BinaryExpr train19.py:60" -> "value train19.py:60"
+-> "18"
+"BinaryExpr train19.py:60" -> "ExceptStmt train19.py:61"
+-> "18"
+->
+"h_append train19.py:60" -> "For train19.py:57"
+-> "19"
+"h_append train19.py:60" -> "ExceptStmt train19.py:61"
+-> "19"
+->
+"Compare train19.py:64" -> "Try train19.py:65"
+-> "20"
+"Compare train19.py:64" -> "h train19.py:75"
+-> "20"
+->
+"Subscript train19.py:67" -> "Tuple train19.py:67"
+-> "21"
+"Subscript train19.py:67" -> "ExceptStmt train19.py:73"
+-> "21"
+->
+"Tuple train19.py:67" -> "key_value train19.py:67"
+-> "22"
+"Tuple train19.py:67" -> "ExceptStmt train19.py:73"
+-> "22"
+->
+"Yield train19.py:68" -> "next train19.py:69"
+-> "23"
+"Yield train19.py:68" -> "ExceptStmt train19.py:73"
+-> "23"
+->
+"next train19.py:69" -> "value train19.py:69"
+-> "24"
+"next train19.py:69" -> "ExceptStmt train19.py:73"
+-> "24"
+->
+"key train19.py:70" -> "s train19.py:70"
+-> "25"
+"key train19.py:70" -> "ExceptStmt train19.py:73"
+-> "25"
+->
+"Subscript train19.py:70" -> "value train19.py:71"
+-> "26"
+"Subscript train19.py:70" -> "ExceptStmt train19.py:73"
+-> "26"
+->
+"Subscript train19.py:71" -> "_heapreplace train19.py:72"
+-> "27"
+"Subscript train19.py:71" -> "ExceptStmt train19.py:73"
+-> "27"
+->
+"_heapreplace train19.py:72" -> "While train19.py:66"
+-> "28"
+"_heapreplace train19.py:72" -> "ExceptStmt train19.py:73"
+-> "28"
+->
+"h train19.py:75" -> "h train19.py:76"
+-> "29"
+"h train19.py:75" -> "Function merge train19.py:1"
+-> "29"
+->
+"For train19.py:78" -> "it train19.py:78"
+-> "30"
+"it train19.py:78" -> "For train19.py:78"
+-> "30"
+->
+exit
+}
