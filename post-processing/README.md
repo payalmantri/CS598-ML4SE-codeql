@@ -3,23 +3,41 @@ CS 598 JBR Project
 # File Structure
 
 codeql-custom-queries-python/
+
     -> dataflow.ql #Analyze data flow in python
+    
     -> example.ql #Analyze control flow in python
+    
 codeql-custom-queries-java/
+
     -> dataflow.ql #Analyze data flow in java
+    
     -> example.ql #Analyze control flow in java
+    
 post-processing/ 
+
     -> dataset/ 
+    
         -> java/
+        
             -> outputs/ #contains the output csv, the .dot files and the images of the control flow and dataflow that were analyzed
+            
         -> python
+        
             -> outputs/ #contains the output csv, the .dot files and the images of the control flow and dataflow that were analyzed
+            
             -> sample-database/ #Contains the extracted python files that are analyzed, and the codeql database files
+            
             -> python20.json #The code snippets from the code search net records in json format
+            
     -> process_data.py # convert the data from the output csv to a graphviz .dot file
+    
     -> import_samples.py #read the code snippets from the CodeSearchNet records from json to make python files for a local db
+    
     -> usefulCommands.md #Contains some commands related to running the codeql queries and generating the graphs in the terminal
+    
     -> pipeline.bat #run the full data query to graph image generation pipeling
+    
 
 # Setup and Execution
 
