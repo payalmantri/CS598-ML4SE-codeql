@@ -1,0 +1,38 @@
+strict digraph {"if ... Envelope2D.java:785" -> "return ... Envelope2D.java:786"
+-> "0"
+"if ... Envelope2D.java:785" -> "var ...; Envelope2D.java:788"
+-> "0"
+
+-> "0"
+->
+"if ... Envelope2D.java:792" -> "return ... Envelope2D.java:793"
+-> "1"
+"if ... Envelope2D.java:792" -> "if ... Envelope2D.java:795"
+-> "1"
+
+-> "1"
+->
+"if ... Envelope2D.java:795" -> "return ... Envelope2D.java:796"
+-> "2"
+"if ... Envelope2D.java:795" -> "...?...:... Envelope2D.java:798"
+-> "2"
+
+-> "2"
+->
+"return ... Envelope2D.java:798" -> "exit "
+-> "3"
+
+-> "3"
+"return ... Envelope2D.java:786" -> "exit "
+-> "3"
+
+-> "3"
+"return ... Envelope2D.java:793" -> "exit "
+-> "3"
+
+-> "3"
+"return ... Envelope2D.java:796" -> "exit "
+-> "3"
+
+-> "3"
+}
